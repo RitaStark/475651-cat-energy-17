@@ -1,0 +1,19 @@
+.site-list__item {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.main-nav {
+    position: relative;
+    &__close-button {
+        background-color: #ffffff;
+        border: none;
+        position: absolute;
+        right: 15px;
+        top: -65px;
+    }
+}
+
+.main-nav ul {
+    padding: 0;
+}

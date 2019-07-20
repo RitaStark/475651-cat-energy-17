@@ -1,0 +1,85 @@
+.catalog-main {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 280px;
+    &__header {
+        font-size: 36px;
+        font-weight: 400;
+        border-top: 1px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.catalog-item {
+    &__intro {
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #111111;
+    }
+    &__value {
+        text-align: right;
+    }
+    &__name {
+        padding-right: 50px;
+    }
+    &__list {
+        font-family: "Arial", sans-serif;
+        font-size: 12px;
+        margin-bottom: 23px;
+    }
+    &__order {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #ffffff;
+        text-align: center;
+        background-color: #68b738;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-right: auto;
+        flex-grow: 1;
+    }
+    &__show {
+        border-top: 1px solid #ededed;
+        border-bottom: 1px solid #ededed;
+        margin-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+.show-more {
+    text-align: center;
+    &__img {
+        opacity: 0.2;
+        display: block;
+        margin: 26px auto;
+    }
+    &__header {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 400;
+        color: #111111;
+        font-family: "Arial", sans-serif;
+    }
+    &__descript {
+        font-size: 12px;
+        font-family: "Arial", sans-serif;
+        margin-bottom: 40px;
+    }
+    &__button {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #111111;
+        font-size: 16px;
+        background-color: #f2f2f2;
+        padding-top: 15px;
+        padding-bottom: 17px;
+        display: block;
+    }
+}

@@ -1,6 +1,15 @@
+@import "logo";
+@import "header";
+@import "main";
+@import "main-nav";
+@import "footer";
+@import "catalog-main";
 body {
-    background-color: red;
-    div {
-        box-sizing: border-box;
-    }
+    font-family: "Oswald", sans-serif;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    display: none;
 }

@@ -1,0 +1,35 @@
+.logo {
+    &__text {
+        display: block;
+        margin: 40px auto;
+    }
+}
+
+.footer {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    &__social {
+        border-top: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.academy {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+    &__link {
+        text-decoration: none;
+        color: #444444;
+    }
+    &__icon {
+        margin-right: 30px;
+        color: #444444;
+        /*изменить цвет*/
+    }
+}
