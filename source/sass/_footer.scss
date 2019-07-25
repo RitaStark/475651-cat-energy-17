@@ -1,10 +1,11 @@
 .footer {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 50px;
-    &__academy {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 23px;
-    }
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+
+  &__academy {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+  }
 }

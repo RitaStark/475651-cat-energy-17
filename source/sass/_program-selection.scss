@@ -1,46 +1,52 @@
 .program-selection {
-    background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-    width: 320px;
-    height: 305px;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  width: 320px;
+  height: 305px;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 175px;
+  position: relative;
+
+  &__header {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    margin: auto 20px auto 20px;
+    padding-top: 30px;
+  }
+
+  &__description {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 20px;
+  }
+
+  &__button {
+    margin-top: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 11px 0 11px 0;
+    background-color: #68b738;
     color: #ffffff;
-    text-align: center;
-    padding-bottom: 175px;
-    position: relative;
-    &__header {
-        font-size: 36px;
-        line-height: 36px;
-        font-weight: 400;
-        margin: auto 20px auto 20px;
-        padding-top: 30px;
+
+    &:hover {
+      background-color: #5eaa2f;
     }
-    &__description {
-        text-transform: uppercase;
-        font-size: 14px;
-        line-height: 14px;
-        margin-top: 20px;
+
+    &:active {
+      color: #99c684;
     }
-    &__button {
-        margin-top: 300px;
-        margin-left: 20px;
-        margin-right: 20px;
-        padding: 11px 0 11px 0;
-        background-color: #68b738;
-        color: #ffffff;
-        &:hover {
-            background-color: #5eaa2f;
-        }
-        &:active {
-            color: #99c684;
-        }
-    }
-    &__img {
-        position: absolute;
-        background-image: url("../img/index-can-mobile@1x.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        min-height: 273px;
-        top: 160px;
-        left: 0;
-    }
+  }
+
+  &__img {
+    position: absolute;
+    background-image: url("../img/index-can-mobile@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 273px;
+    top: 160px;
+    left: 0;
+  }
 }
