@@ -1,0 +1,100 @@
+.program-type {
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-bottom: 23px;
+  /*сделать отступ снизу иначе*/
+  &__item {
+    background-color: #f2f2f2;
+    padding-bottom: 21px;
+  }
+}
+
+.item-type {
+  &__header {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 40px;
+    padding-left: 85px;
+    color: #111111;
+    margin-bottom: 20px;
+  }
+
+  &__header--lose {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../img/icon-cat-slim.svg") no-repeat;
+      height: 53px;
+      width: 53px;
+      left: 25px;
+      top: 35px;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #68b738;
+      height: 50px;
+      width: 50px;
+      left: 20px;
+      border-radius: 50%;
+    }
+  }
+
+  &__header--gain {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../img/icon-cat-pro.svg") no-repeat;
+      height: 57px;
+      width: 57px;
+      left: 15px;
+      top: 55px;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #68b738;
+      height: 50px;
+      width: 50px;
+      left: 20px;
+      border-radius: 50%;
+    }
+  }
+
+  &__description {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-bottom: 23px;
+    font-family: "Arial", sans-serif;
+    color: #737373;
+    border-bottom: 1px solid #d9d9d9;
+    font-size: 14px;
+  }
+
+  &__details {
+    text-decoration: none;
+    color: #111111;
+    margin-left: 20px;
+    margin-bottom: 23px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-right-arrow-long.svg");
+      width: 24px;
+      height: 11px;
+      top: 8px;
+      left: 90px;
+    }
+  }
+}

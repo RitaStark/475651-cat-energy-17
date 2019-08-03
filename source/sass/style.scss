@@ -1,6 +1,31 @@
+@import "logo";
+@import "header";
+@import "main";
+@import "main-nav";
+@import "footer";
+@import "catalog-main";
+@import "instruction";
+@import "program-type";
+@import "program-selection";
+@import "social";
+@import "academy";
+@import "site-list";
+
 body {
-    background-color: red;
-    div {
-        box-sizing: border-box;
-    }
+  font-family: "Oswald", sans-serif;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+  text-align: center;
 }
