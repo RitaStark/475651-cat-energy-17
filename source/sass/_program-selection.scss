@@ -6,6 +6,8 @@
   text-align: center;
   padding-bottom: 175px;
   position: relative;
+  margin-right: 20px;
+  margin-left: 20px;
 
   &__header {
     font-size: 36px;
@@ -24,11 +26,12 @@
 
   &__button {
     margin-top: 300px;
-    margin-left: 20px;
     margin-right: 20px;
     padding: 11px 0 11px 0;
     background-color: #68b738;
     color: #ffffff;
+    position: absolute;
+    width: 100%;
 
     &:hover {
       background-color: #5eaa2f;
@@ -48,5 +51,57 @@
     min-height: 273px;
     top: 160px;
     left: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-selection {
+    width: 709px;
+    margin: 0 auto;
+    min-height: 835px;
+    background-image: none;
+    background-color: #ffffff;
+    position: relative;
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-position: -70px 140px;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    margin-left: 90px;
+    &__header {
+      width: 320px;
+      color: #111111;
+      text-align: left;
+      margin-left: 0;
+    }
+    &__description {
+      color: #111111;
+      text-align: left;
+    }
+    &__button {
+      position: absolute;
+      margin-left: 0;
+      top: -140px;
+      left: 0;
+      z-index: 1;
+      width: 244px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-selection {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background: url("../img/index-can-desktop@1x.png") no-repeat;
+      // background-position: 0 0;
+      top: 0;
+      right: -250px;
+      width: 552px;
+      height: 499px;
+      z-index: 1;
+    }
   }
 }

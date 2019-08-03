@@ -1,3 +1,30 @@
 .main {
   background-color: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .main-wrapper {
+    width: 709px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-wrapper {
+    width: auto;
+    margin: 0 auto;
+  }
+  .main {
+    width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      top: -80px;
+      right: -70px;
+      width: 720px;
+      height: 696px;
+    }
+  }
+}

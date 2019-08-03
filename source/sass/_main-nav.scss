@@ -1,0 +1,16 @@
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 450px;
+    &__toggle {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    &__list {
+      z-index: 1;
+    }
+  }
+}

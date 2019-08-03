@@ -53,3 +53,24 @@
 .main-nav ul {
   padding: 0;
 }
+
+/*TABLET*/
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    &__item {
+      border-top: none;
+      padding-bottom: 12px;
+      &:first-child {
+        border-bottom: 2px solid #68b738;
+      }
+    }
+
+    &__item {
+      color: red;
+    }
+  }
+}
