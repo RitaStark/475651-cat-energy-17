@@ -1,27 +1,21 @@
 .header {
   background-color: #ffffff;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.wrapper-header {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
 }
 
 /*TABLET*/
 
 @media (min-width: $tablet-width) {
-  .header {
-    margin: 0;
-  }
   .wrapper-header {
+    width: 709px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
   }
 }
 

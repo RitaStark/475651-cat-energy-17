@@ -1,8 +1,13 @@
+.footer {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .footer-wrapper {
+  margin-bottom: 50px;
+  width: 280px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 50px;
-  width: 320px;
 
   &__academy {
     display: flex;

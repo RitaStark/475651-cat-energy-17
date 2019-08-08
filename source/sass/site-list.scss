@@ -14,46 +14,6 @@
   }
 }
 
-.main-nav {
-  position: relative;
-
-  &__close-button {
-    background-color: #ffffff;
-    border: none;
-    position: absolute;
-    right: 15px;
-    top: -65px;
-  }
-
-  &__toggle {
-    border: none;
-    background-color: #ffffff;
-    cursor: pointer;
-    padding: 0;
-  }
-
-  &__wrapper {
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  &--closed {
-    display: none;
-  }
-
-  &--opened {
-    display: block;
-  }
-}
-
-.main-nav--closed .site-list__item {
-  display: none;
-}
-
-.main-nav ul {
-  padding: 0;
-}
-
 /*TABLET*/
 
 @media (min-width: $tablet-width) {

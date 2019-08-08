@@ -1,13 +1,13 @@
 .program-selection {
   background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-  width: 320px;
   height: 305px;
   color: #ffffff;
   text-align: center;
-  padding-bottom: 175px;
+  margin-bottom: 195px;
   position: relative;
-  margin-right: 20px;
+  width: 280px;
   margin-left: 20px;
+  margin-right: 20px;
 
   &__header {
     font-size: 36px;
@@ -25,8 +25,8 @@
   }
 
   &__button {
-    margin-top: 300px;
-    margin-right: 20px;
+    margin-top: 250px;
+    margin-bottom: 20px;
     padding: 11px 0 11px 0;
     background-color: #68b738;
     color: #ffffff;

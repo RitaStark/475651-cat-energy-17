@@ -1,12 +1,12 @@
 .program-type {
-  margin-right: 20px;
+  width: 280px;
   margin-left: 20px;
+  margin-right: 20px;
   padding-bottom: 23px;
   /*сделать отступ снизу иначе*/
   &__item {
     background-color: #f2f2f2;
     padding-bottom: 21px;
-    width: 320px;
   }
 }
 

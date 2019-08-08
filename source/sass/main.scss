@@ -1,10 +1,13 @@
 .main {
   background-color: #ffffff;
+  width: 320px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .main-wrapper {
     width: 709px;
+    margin: 0 auto;
   }
 }
 
