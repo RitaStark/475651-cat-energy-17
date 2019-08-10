@@ -161,11 +161,9 @@
 
 @media (min-width: $desktop-width) {
   .program-type {
-    width: 1300px;
+    width: 1220px;
     display: flex;
     justify-content: space-between;
-    padding-right: 40px;
-    padding-left: 40px;
     box-sizing: border-box;
     position: relative;
     &__item {

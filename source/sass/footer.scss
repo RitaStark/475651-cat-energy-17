@@ -1,13 +1,11 @@
 .footer {
-  width: 320px;
   margin: 0 auto;
 }
 
 .footer-wrapper {
   margin-bottom: 50px;
   width: 280px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 auto;
 
   &__academy {
     display: flex;
@@ -27,13 +25,17 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer-wrapper {
-    display: flex;
+  .footer {
+    margin: 0 auto;
     width: 709px;
+  }
+  .footer-wrapper {
+    width: 709px;
+    margin: 0 auto;
+    display: flex;
     justify-content: space-between;
     padding-bottom: 60px;
     padding-top: 30px;
-    margin: 0 auto;
   }
   .social {
     border: none;
@@ -53,11 +55,12 @@
 @media (min-width: $desktop-width) {
   .footer {
     background-color: #f2f2f2;
+    width: auto;
   }
   .footer-wrapper {
-    width: 1300px;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 1220px;
+    // padding-left: 40px;
+    // padding-right: 40px;
     box-sizing: border-box;
   }
 }
