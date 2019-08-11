@@ -1,0 +1,40 @@
+.header {
+  background-color: #ffffff;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.wrapper-header {
+  width: 280px;
+  margin: 0 auto;
+}
+
+/*TABLET*/
+
+@media (min-width: $tablet-width) {
+  .header {
+    width: 709px;
+    margin: 0 auto;
+  }
+  .wrapper-header {
+    width: 709px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    width: 1300px;
+    padding-right: 40px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .wrapper-header {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
