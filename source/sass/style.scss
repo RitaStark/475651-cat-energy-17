@@ -1,3 +1,4 @@
+@import "variables";
 @import "logo";
 @import "header";
 @import "main";
@@ -10,22 +11,4 @@
 @import "social";
 @import "academy";
 @import "site-list";
-
-body {
-  font-family: "Oswald", sans-serif;
-  width: 320px;
-  margin: 0 auto;
-}
-
-.visually-hidden {
-  display: none;
-}
-
-.btn {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
-  display: block;
-  text-align: center;
-}
+@import "common";
