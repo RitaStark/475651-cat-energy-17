@@ -5,8 +5,8 @@
     background-color: #ffffff;
     border: none;
     position: absolute;
-    right: 0;
-    top: -85px;
+    right: 18px;
+    top: -65px;
   }
 
   &__toggle {
@@ -43,14 +43,6 @@
     width: 450px;
     &__toggle {
       display: none;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav {
-    &__list {
-      z-index: 1;
     }
   }
 }

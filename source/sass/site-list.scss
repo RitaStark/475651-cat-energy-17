@@ -34,3 +34,18 @@
     }
   }
 }
+
+// DESCTOP
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    a {
+      color: #ffffff;
+    }
+    &__item {
+      &:first-child {
+        border-bottom: 2px solid #ffffff;
+      }
+    }
+  }
+}
