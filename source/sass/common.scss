@@ -3,14 +3,6 @@ body {
   margin: 0 auto;
 }
 
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: local ("Oswald"), url("../fonts/oswaldregular.woff") format(woff),
-    url("../fonts/oswaldregular.woff2") format(woff2);
-}
-
 .visually-hidden {
   display: none;
 }
@@ -23,10 +15,3 @@ body {
   display: block;
   text-align: center;
 }
-
-// @media (max-width: $mobile-width) {
-//   .main-wrapper {
-//     width: 320px;
-//     margin: 0 auto;
-//   }
-// }
