@@ -39,6 +39,9 @@
       &:nth-child(2) {
         border-bottom: 2px solid #68b738;
       }
+      &:first-child {
+        border-bottom: none;
+      }
     }
 
     &__item {
