@@ -5,9 +5,9 @@
   margin-top: -17px;
 
   &__header {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 400;
-    font-family: "Arial", sans-serif;
+    font-family: "Oswald";
     margin-bottom: 36px;
   }
 
@@ -94,8 +94,12 @@
   .instruction {
     width: 709px;
     margin: 0 auto;
+    border-bottom: 1px solid #e6e6e6;
     &__header {
       font-size: 60px;
+      font-family: "Oswald";
+      margin-top: 30px;
+      margin-bottom: 58px;
     }
   }
   .advantage {
@@ -105,10 +109,13 @@
     justify-content: space-between;
 
     &__item {
-      width: 270px;
+      width: 325px;
       height: 50px;
-      padding-top: 117px;
+      font-size: 16px;
+      line-height: 24px;
+      padding-top: 112px;
       padding-bottom: 70px;
+      margin-bottom: 82px;
       position: relative;
       &::before {
         content: "";
@@ -154,5 +161,14 @@
   .instruction {
     width: 1220px;
     margin: 0 auto;
+    &__header {
+      margin-bottom: 56px;
+    }
+  }
+  .advantage {
+    &__item {
+      width: 23%;
+      margin-right: -36px;
+    }
   }
 }

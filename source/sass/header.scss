@@ -5,7 +5,7 @@
 
 .wrapper-header {
   width: 320px;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
 }
 
 /*TABLET*/
@@ -36,5 +36,6 @@
   .wrapper-header {
     width: 1220px;
     margin: 0 auto;
+    margin-top: 50px;
   }
 }
