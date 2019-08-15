@@ -5,10 +5,8 @@
     line-height: 16px;
     text-decoration: none;
     color: #444444;
-  }
-
-  &__icon {
-    fill: #666666;
-    margin-top: -5px;
+    &:active {
+      color: #c8c8c8;
+    }
   }
 }

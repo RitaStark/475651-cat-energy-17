@@ -92,6 +92,9 @@
     margin-bottom: 23px;
     position: relative;
     text-transform: uppercase;
+    &:active {
+      color: #c5c6c6;
+    }
 
     &::after {
       content: "";
@@ -280,6 +283,7 @@
       }
       &__details {
         padding-bottom: 57px;
+        padding-right: 25px;
       }
     }
   }

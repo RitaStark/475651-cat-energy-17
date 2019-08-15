@@ -10,6 +10,12 @@
     a {
       text-decoration: none;
       color: #111111;
+      &:hover {
+        color: #919191;
+      }
+      &:active {
+        color: #cccccc;
+      }
     }
   }
 }
@@ -54,25 +60,46 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    a {
-      color: #ffffff;
-      &:hover {
-        color: red;
-      }
-    }
     &__item {
       font-size: 20px;
       line-height: 24px;
       &:first-child {
         border-bottom: 2px solid #ffffff;
       }
+      a {
+        color: #ffffff;
+
+        &:hover {
+          color: #cbe0c1;
+        }
+        &:active {
+          color: #9ec689;
+        }
+      }
+    }
+    &--form {
+      &:first-child {
+        border-bottom: none;
+      }
+      &:nth-child(3) {
+        border-bottom: 2px solid #68b738;
+      }
     }
   }
+
+  // CATALOG
+
   .site-list {
     &--catalog {
       & a {
         color: #111111;
         font-size: 20px;
+        &:hover {
+          color: #919191;
+        }
+        &:active {
+          color: #cccccc;
+        }
       }
       &:nth-child(2) {
         border-bottom: 2px solid #68b738;
