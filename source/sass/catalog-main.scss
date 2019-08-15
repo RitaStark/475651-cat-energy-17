@@ -7,22 +7,40 @@
     font-weight: 400;
     border-top: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
-    padding-top: 25px;
+    margin-top: 16px;
     padding-bottom: 30px;
+    padding-left: 20px;
   }
 
   &__item {
+    width: 280px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 24px;
+    padding-top: 42px;
+    margin: -22px auto 0 auto;
+    border-bottom: 1px solid #ededed;
   }
 }
 
+.catalog-pic {
+  margin-top: -19px;
+}
+
+.catalog-wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .catalog-item {
+  margin-top: 5px;
   &__intro {
     text-transform: uppercase;
     font-size: 16px;
+    line-height: 20px;
     color: #111111;
+    margin-top: -6px;
   }
 
   &__value {
@@ -37,12 +55,16 @@
     font-family: "Arial", sans-serif;
     font-size: 12px;
     margin-bottom: 23px;
+    margin-top: -5px;
+    border-collapse: collapse;
   }
 
   &__order {
-    padding: 13px 0 13px 0;
+    padding: 9px 0 9px 0;
     background-color: #68b738;
     color: #ffffff;
+    margin-top: -5px;
+    margin-bottom: 16px;
     flex-grow: 1;
 
     &:hover {
@@ -55,7 +77,6 @@
   }
 
   &__show {
-    border-top: 1px solid #ededed;
     border-bottom: 1px solid #ededed;
     margin-top: 24px;
     padding-bottom: 24px;
@@ -90,7 +111,9 @@
     font-size: 16px;
     background-color: #f2f2f2;
     padding-top: 15px;
-    padding-bottom: 17px;
+    padding-bottom: 13px;
+    margin-right: 20px;
+    margin-left: 20px;
 
     &:hover {
       background-color: #ebebeb;
@@ -109,19 +132,24 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      width: 249px;
+      width: 324px;
       background-color: #f2f2f2;
+      margin: 100px 0 50px 0;
       padding-bottom: 40px;
-      margin-bottom: 50px;
-      padding-right: 37px;
-      padding-left: 37px;
-      &__header {
-        border-top: none;
-        border-bottom: none;
+      & picture {
+        display: block;
+        margin-top: auto;
       }
+    }
+    &__header {
+      border-top: none;
+      border-bottom: none;
+      margin-left: 0;
+      padding-left: 0;
     }
   }
   .catalog-wrapper {
+    width: 709px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -131,36 +159,111 @@
     flex-direction: column;
     justify-content: space-between;
     width: 249px;
+    margin-top: 20px;
+    padding-right: 37px;
+    padding-left: 37px;
     &__intro {
       text-align: center;
     }
     &__show {
-      width: 249px;
-      padding-right: 37px;
-      padding-left: 37px;
+      width: 322px;
       border-top: none;
       border-bottom: none;
       padding-bottom: 40px;
+      border: 1px solid #cdcdcd;
+      margin-bottom: 50px;
+      margin-top: 102px;
+      margin-right: 11px;
+    }
+    &__order {
+      flex-grow: 0;
+      margin-right: 37px;
+      margin-left: 37px;
+      margin-top: 16px;
+    }
+    &__list {
+      & td {
+        padding-bottom: 8px;
+        padding-top: 5px;
+        border-bottom: 1px solid #cdcdcd;
+      }
     }
   }
   .show-more {
+    &__header {
+      font-family: "Oswald";
+      font-size: 16px;
+      padding-right: 90px;
+      padding-left: 90px;
+    }
     &__descript {
       margin-bottom: 135px;
+      padding-right: 80px;
+      padding-left: 80px;
     }
+    &__button {
+      margin-top: 20px;
+      margin-right: 37px;
+      margin-left: 37px;
+    }
+    &__img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .catalog-pic {
+    margin-top: -120px;
+    margin-left: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-main {
-    width: 1300px;
-    padding-right: 40px;
-    padding-left: 40px;
+    width: 1220px;
     box-sizing: border-box;
     &__item {
       width: 245px;
-      padding-left: 37px;
-      padding-right: 37px;
       box-sizing: border-box;
+      margin-left: 0;
+      margin-right: 0;
     }
+    &__header {
+      width: 1220px;
+      padding-left: 0;
+      font-size: 60px;
+    }
+  }
+  .catalog-item {
+    width: 171px;
+    margin-right: 37px;
+    padding-right: 0;
+    &__order {
+      margin-right: 37px;
+    }
+    &__show {
+      width: 245px;
+      margin-right: 0;
+    }
+  }
+  .show-more {
+    &__header {
+      padding-right: 55px;
+      padding-left: 55px;
+      margin-top: 50px;
+      margin-bottom: 0;
+    }
+    &__descript {
+      padding-right: 50px;
+      padding-left: 50px;
+      margin-top: 30px;
+      margin-bottom: 83px;
+    }
+    &__img {
+      margin-top: 54px;
+    }
+  }
+
+  .catalog-wrapper {
+    width: 1220px;
   }
 }

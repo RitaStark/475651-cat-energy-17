@@ -1,9 +1,9 @@
 .program-type {
   width: 280px;
+  padding-bottom: 23px;
   margin-left: 20px;
   margin-right: 20px;
-  padding-bottom: 23px;
-  /*сделать отступ снизу иначе*/
+  margin-top: 0;
   &__item {
     background-color: #f2f2f2;
     padding-bottom: 21px;
@@ -15,8 +15,8 @@
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 400;
-    padding-top: 40px;
-    padding-left: 85px;
+    padding-top: 30px;
+    padding-left: 90px;
     color: #111111;
     margin-bottom: 20px;
   }
@@ -30,8 +30,8 @@
       background: url("../img/icon-cat-slim.svg") no-repeat;
       height: 53px;
       width: 53px;
-      left: 25px;
-      top: 35px;
+      left: 28px;
+      top: 19px;
       z-index: 1;
     }
 
@@ -41,40 +41,44 @@
       background-color: #68b738;
       height: 50px;
       width: 50px;
-      left: 20px;
+      left: 22px;
+      top: 25px;
       border-radius: 50%;
     }
   }
 
-  &__header--gain {
-    position: relative;
+  &__header {
+    &--gain {
+      position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      background: url("../img/icon-cat-pro.svg") no-repeat;
-      height: 57px;
-      width: 57px;
-      left: 15px;
-      top: 55px;
-      z-index: 1;
-    }
+      &::before {
+        content: "";
+        position: absolute;
+        background: url("../img/icon-cat-pro.svg") no-repeat;
+        height: 68px;
+        width: 68px;
+        left: 11px;
+        top: 33px;
+        z-index: 1;
+      }
 
-    &::after {
-      content: "";
-      position: absolute;
-      background-color: #68b738;
-      height: 50px;
-      width: 50px;
-      left: 20px;
-      border-radius: 50%;
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: #68b738;
+        height: 50px;
+        width: 50px;
+        left: 21px;
+        top: 21px;
+        border-radius: 50%;
+      }
     }
   }
-
   &__description {
     margin-right: 20px;
     margin-left: 20px;
-    padding-bottom: 23px;
+    margin-top: 31px;
+    padding-bottom: 31px;
     font-family: "Arial", sans-serif;
     color: #737373;
     border-bottom: 1px solid #d9d9d9;
@@ -87,6 +91,7 @@
     margin-left: 20px;
     margin-bottom: 23px;
     position: relative;
+    text-transform: uppercase;
 
     &::after {
       content: "";
@@ -95,7 +100,7 @@
       width: 24px;
       height: 11px;
       top: 8px;
-      left: 90px;
+      left: 97px;
     }
   }
 }
@@ -103,57 +108,95 @@
 @media (min-width: $tablet-width) {
   .program-type {
     width: 709px;
-    margin: 0 auto;
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 0;
     &__item {
       width: 709px;
+      padding-bottom: 57px;
+
+      &:first-child {
+        margin-bottom: 30px;
+      }
     }
   }
   .item-type {
     position: relative;
     &__description {
+      line-height: 24px;
+      font-size: 16px;
       border-bottom: none;
       padding-left: 54px;
+      padding-bottom: 54px;
+      padding-right: 315px;
       margin: 0;
-      max-width: 385px;
     }
     &__header {
-      padding-top: 80px;
+      padding-top: 68px;
+      padding-left: 53px;
+      font-size: 36px;
+      margin-top: 0;
+      &--lose {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          background: url("../img/icon-cat-slim.svg") no-repeat;
+          height: 194px;
+          width: 194px;
+          left: 475px;
+          top: 80px;
+          z-index: 1;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: #68b738;
+          height: 200px;
+          width: 200px;
+          left: 446px;
+          top: 92px;
+          border-radius: 50%;
+        }
+      }
+      &--gain {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          background: url("../img/icon-cat-pro.svg") no-repeat;
+          height: 269px;
+          width: 269px;
+          left: 411px;
+          top: 135px;
+          z-index: 1;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: #68b738;
+          height: 200px;
+          width: 200px;
+          left: 448px;
+          top: 92px;
+          border-radius: 50%;
+        }
+      }
     }
     &__details {
       padding-bottom: 60px;
-    }
-    &:nth-child(1) {
+      padding-left: 53px;
+      margin-left: 0;
+      font-size: 20px;
+      line-height: 20px;
       &::after {
         content: "";
         position: absolute;
-        background: url(../img/icon-cat-slim.svg) no-repeat;
-        top: 120px;
-        transform: translateY(-50%);
-        right: 90px;
-        height: 194px;
-        width: 140px;
-      }
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      height: 200px;
-      width: 200px;
-      background-color: #68b738;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 60px;
-      border-radius: 50%;
-    }
-    &:nth-child(2) {
-      &::after {
-        content: "";
-        position: absolute;
-        background: url(../img/icon-cat-pro.svg) no-repeat;
-        top: 60px;
-        right: 30px;
-        height: 113px;
-        width: 269px;
+        background-image: url("../img/icon-right-arrow-long.svg");
+        width: 24px;
+        height: 11px;
+        top: 9px;
+        left: 181px;
       }
     }
   }
@@ -166,17 +209,77 @@
     justify-content: space-between;
     box-sizing: border-box;
     position: relative;
+    margin-right: 0;
+    margin-left: 0;
     &__item {
       width: 570px;
+      &:first-child {
+        margin-bottom: 0;
+      }
     }
     .item-type {
       position: relative;
+      margin-bottom: 0;
       &__header {
-        padding-left: 160px;
-        margin-bottom: 50px;
+        padding-left: 213px;
+        margin-bottom: 66px;
+        &--lose {
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            background: url("../img/icon-cat-slim.svg") no-repeat;
+            height: 97px;
+            width: 97px;
+            left: 65px;
+            top: 41px;
+            z-index: 1;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            background-color: #68b738;
+            height: 100px;
+            width: 100px;
+            left: 52px;
+            top: 47px;
+            border-radius: 50%;
+          }
+        }
+        &--gain {
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            background: url("../img/icon-cat-pro.svg") no-repeat;
+            height: 134px;
+            width: 134px;
+            left: 35px;
+            top: 69px;
+            z-index: 1;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            background-color: #68b738;
+            height: 100px;
+            width: 100px;
+            left: 52px;
+            top: 47px;
+            border-radius: 50%;
+          }
+        }
+      }
+      &__description {
+        padding-right: 50px;
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 32px;
       }
       &__details {
-        margin-left: 54px;
+        padding-bottom: 57px;
       }
     }
   }

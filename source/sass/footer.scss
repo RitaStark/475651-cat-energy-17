@@ -59,8 +59,21 @@
   }
   .footer-wrapper {
     width: 1220px;
-    // padding-left: 40px;
-    // padding-right: 40px;
     box-sizing: border-box;
+    &__social {
+      padding-left: 131px;
+    }
+  }
+  .academy {
+    &__link {
+      font-family: Arial, Helvetica, sans-serif;
+      margin-right: 12px;
+      margin-top: 9px;
+    }
+    &__icon {
+      width: 37px;
+      height: 44px;
+      margin-top: -4px;
+    }
   }
 }

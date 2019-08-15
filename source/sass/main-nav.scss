@@ -5,8 +5,8 @@
     background-color: #ffffff;
     border: none;
     position: absolute;
-    right: 0;
-    top: -85px;
+    right: 18px;
+    top: -65px;
   }
 
   &__toggle {
@@ -49,8 +49,6 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    &__list {
-      z-index: 1;
-    }
+    left: -30px;
   }
 }

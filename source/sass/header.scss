@@ -1,12 +1,11 @@
 .header {
-  background-color: #ffffff;
-  margin: 0 auto;
+  margin: 57px auto 0 auto;
   box-sizing: border-box;
 }
 
 .wrapper-header {
-  width: 280px;
-  margin: 0 auto;
+  width: 320px;
+  margin: 0 auto 0 auto;
 }
 
 /*TABLET*/
@@ -36,5 +35,6 @@
   .wrapper-header {
     width: 1220px;
     margin: 0 auto;
+    margin-top: 50px;
   }
 }

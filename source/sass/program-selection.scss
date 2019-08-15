@@ -3,18 +3,16 @@
   height: 305px;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 195px;
+  margin-bottom: 235px;
   position: relative;
-  width: 280px;
-  margin-left: 20px;
-  margin-right: 20px;
 
   &__header {
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
-    margin: auto 15px auto 15px;
+    margin: -6px 20px -11px 20px;
     padding-top: 30px;
+    width: 280px;
   }
 
   &__description {
@@ -22,16 +20,20 @@
     font-size: 14px;
     line-height: 14px;
     margin-top: 35px;
+    margin-left: 19px;
+    width: 280px;
   }
 
   &__button {
-    margin-top: 325px;
+    margin-top: 320px;
     margin-bottom: 20px;
     padding: 11px 0 11px 0;
     background-color: #68b738;
     color: #ffffff;
     position: absolute;
-    width: 100%;
+    width: 280px;
+    margin-left: 20px;
+    margin-right: 20px;
 
     &:hover {
       background-color: #5eaa2f;
@@ -44,12 +46,11 @@
 
   &__img {
     position: absolute;
-    background-image: url("../img/index-can-mobile@1x.png");
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     min-height: 273px;
-    top: 160px;
+    top: 167px;
     left: 0;
   }
 }
@@ -57,33 +58,49 @@
 @media (min-width: $tablet-width) {
   .program-selection {
     width: 709px;
-    margin: 0 auto;
-    min-height: 835px;
-    background-image: none;
-    background-color: #ffffff;
+    min-height: 810px;
     position: relative;
-    background-image: url("../img/index-can-tablet@1x.jpg");
-    background-position: -70px 140px;
-    background-repeat: no-repeat;
+    background-image: none;
     padding-bottom: 0;
-    margin-left: 90px;
+    &__img {
+      top: 200px;
+      left: 0;
+    }
+    &__pic {
+      width: 709px;
+      height: 609px;
+    }
     &__header {
-      width: 320px;
+      min-width: 425px;
       color: #111111;
       text-align: left;
-      margin-left: 0;
+      font-size: 60px;
+      margin-left: 90px;
+      padding-top: 0;
+      margin-top: 45px;
+      line-height: 60px;
     }
     &__description {
       color: #111111;
       text-align: left;
+      margin-left: 90px;
+      margin-top: 55px;
+      font-size: 20px;
+      line-height: 20px;
+      min-width: 320px;
     }
     &__button {
       position: absolute;
       margin-left: 0;
-      top: -140px;
+      top: -60px;
       left: 0;
       z-index: 1;
       width: 244px;
+      margin-left: 90px;
+      font-size: 20px;
+      line-height: 20px;
+      padding-top: 15px;
+      padding-bottom: 17px;
     }
   }
 }
@@ -93,17 +110,37 @@
     width: 1220px;
     margin: 0 auto;
     position: relative;
-
+    min-height: 574px;
+    margin-top: -54px;
+    margin-bottom: 80px;
+    &__header {
+      padding-top: 100px;
+      margin-left: 80px;
+    }
+    &__description {
+      margin-top: 50px;
+      margin-left: 80px;
+    }
+    &__button {
+      margin-top: 395px;
+      margin-left: 80px;
+    }
     &::after {
-      position: absolute;
       content: "";
-      background: url("../img/index-can-desktop@1x.png") no-repeat;
-      // background-position: 0 0;
-      top: 0;
-      right: -250px;
+      position: absolute;
+      z-index: -1;
+      width: 50vw;
+      left: 50%;
+      top: -123px;
+      bottom: 0;
+      background: #64a83b url("../img/index-background-desktop@1x.jpg") no-repeat top right;
+      background-size: cover;
+    }
+    &__img {
       width: 552px;
       height: 499px;
-      z-index: 1;
+      margin-left: 450px;
+      margin-top: -180px;
     }
   }
 }
