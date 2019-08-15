@@ -47,6 +47,13 @@
         left: 5px;
         z-index: 1;
       }
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        &::after {
+          background: url("../img/advantage-leaf@2x.png") no-repeat;
+          background-size: 60px 60px;
+          background-position: -3px -3px;
+        }
+      }
     }
 
     &--powder {
@@ -59,6 +66,13 @@
         top: 84px;
         left: 5px;
         z-index: 1;
+      }
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        &::after {
+          background: url("../img/advantage-powder@2x.png") no-repeat;
+          background-size: 60px 60px;
+          background-position: -3px -3px;
+        }
       }
     }
 
@@ -73,6 +87,13 @@
         left: 4px;
         z-index: 1;
       }
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        &::after {
+          background: url("../img/advantage-dining@2x.png") no-repeat;
+          background-size: 60px 60px;
+          background-position: -3px -3px;
+        }
+      }
     }
 
     &--time {
@@ -85,6 +106,13 @@
         top: 244px;
         left: 5px;
         z-index: 1;
+      }
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        &::after {
+          background: url("../img/advantage-clock@2x.png") no-repeat;
+          background-size: 60px 60px;
+          background-position: -3px -3px;
+        }
       }
     }
   }
@@ -125,33 +153,77 @@
         height: 80px;
         top: 0px;
       }
-      &--organic::after {
-        content: "";
-        position: absolute;
-        background: url("../img/advantage-leaf@1x.png") no-repeat;
-        top: 15px;
-        left: 15px;
+      &--organic {
+        &::after {
+          content: "";
+          position: absolute;
+          background: url("../img/advantage-leaf@1x.png") no-repeat;
+          background-size: 80px 80px;
+          top: 0;
+          left: 0;
+        }
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          &::after {
+            background: url("../img/advantage-leaf@2x.png") no-repeat;
+            background-size: 80px 80px;
+            background-position: 0 0;
+          }
+        }
       }
-      &--powder::after {
-        content: "";
-        position: absolute;
-        background: url("../img/advantage-powder@1x.png") no-repeat;
-        top: 15px;
-        left: 15px;
+      &--powder {
+        &::after {
+          content: "";
+          position: absolute;
+          background: url("../img/advantage-powder@1x.png") no-repeat;
+          background-size: 80px 80px;
+          background-position: -13px -13px;
+          top: 15px;
+          left: 15px;
+        }
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          &::after {
+            background: url("../img/advantage-powder@2x.png") no-repeat;
+            background-size: 80px 80px;
+            background-position: -13px -13px;
+          }
+        }
       }
-      &--dining::after {
-        content: "";
-        position: absolute;
-        background: url("../img/advantage-dining@1x.png") no-repeat;
-        top: 15px;
-        left: 15px;
+
+      &--dining {
+        &::after {
+          content: "";
+          position: absolute;
+          background: url("../img/advantage-dining@1x.png") no-repeat;
+          background-size: 80px 80px;
+          background-position: -13px -13px;
+          top: 15px;
+          left: 15px;
+        }
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          &::after {
+            background: url("../img/advantage-dining@2x.png") no-repeat;
+            background-size: 80px 80px;
+            background-position: -13px -13px;
+          }
+        }
       }
-      &--time::after {
-        content: "";
-        position: absolute;
-        background: url("../img/advantage-clock@1x.png") no-repeat;
-        top: 15px;
-        left: 15px;
+      &--time {
+        &::after {
+          content: "";
+          position: absolute;
+          background: url("../img/advantage-clock@1x.png") no-repeat;
+          background-size: 80px 80px;
+          background-position: -13px -13px;
+          top: 15px;
+          left: 15px;
+        }
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          &::after {
+            background: url("../img/advantage-clock@2x.png") no-repeat;
+            background-size: 80px 80px;
+            background-position: -13px -13px;
+          }
+        }
       }
     }
   }

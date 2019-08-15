@@ -56,6 +56,9 @@
   .site-list {
     a {
       color: #ffffff;
+      &:hover {
+        color: red;
+      }
     }
     &__item {
       font-size: 20px;
