@@ -1,7 +1,12 @@
-.social__link {
-  &:hover {
-    polygon {
-      fill: #69b739;
+.social {
+  &__link {
+    &--svg {
+      &:hover {
+        fill: #68b738;
+      }
+      &:active {
+        fill: #c8e0ba;
+      }
     }
   }
 }
