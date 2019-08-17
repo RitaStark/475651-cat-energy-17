@@ -114,8 +114,7 @@
     color: #111111;
     font-size: 16px;
     background-color: #f2f2f2;
-    padding-top: 15px;
-    padding-bottom: 13px;
+    padding: 9px 0 9px 0;
     margin-right: 20px;
     margin-left: 20px;
 
@@ -164,6 +163,7 @@
     justify-content: space-between;
     width: 249px;
     margin-top: 20px;
+    margin-right: 0;
     padding-right: 37px;
     padding-left: 37px;
     &__intro {
@@ -200,7 +200,7 @@
       padding-left: 90px;
     }
     &__descript {
-      margin-bottom: 135px;
+      margin-bottom: 84px;
       padding-right: 80px;
       padding-left: 80px;
     }
@@ -259,7 +259,7 @@
       padding-right: 50px;
       padding-left: 50px;
       margin-top: 30px;
-      margin-bottom: 83px;
+      margin-bottom: 52px;
     }
     &__img {
       margin-top: 54px;
