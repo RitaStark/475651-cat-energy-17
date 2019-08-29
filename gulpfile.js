@@ -26,7 +26,7 @@ gulp.task("css", function () {
       autoprefixer()
     ]))
     .pipe(csso())
-    .pipe(rename("style.min/css"))
+    .pipe(rename("style.min.css"))
 
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
