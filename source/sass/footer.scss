@@ -10,14 +10,12 @@
   &__academy {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   &__social {
-    padding-right: 70px;
-    padding-left: 70px;
+    padding: 20px 86px 16px 73px;
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
-    padding-top: 25px;
-    padding-bottom: 25px;
     display: flex;
     justify-content: space-between;
   }
@@ -36,19 +34,6 @@
     align-items: center;
     padding-bottom: 60px;
     padding-top: 30px;
-  }
-  .social {
-    border: none;
-    display: flex;
-    justify-content: space-between;
-    &__link {
-      margin-right: 28px;
-    }
-  }
-  .academy {
-    &__link {
-      margin-right: 22px;
-    }
   }
 }
 

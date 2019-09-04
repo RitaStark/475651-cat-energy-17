@@ -6,9 +6,19 @@
     line-height: 16px;
     text-decoration: none;
     color: #444444;
-    margin-top: 8px;
+    margin-top: 20px;
     &:active {
       color: #c8c8c8;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .academy {
+    margin-top: -5px;
+    &__link {
+      margin-top: 0;
+      margin-right: 33px;
     }
   }
 }

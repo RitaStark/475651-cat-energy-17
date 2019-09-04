@@ -5,7 +5,7 @@
   width: 320px;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 235px;
+  margin-bottom: 199px;
   position: relative;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/index-background-mobile@2x.jpg") no-repeat;
@@ -31,15 +31,12 @@
   }
 
   &__button {
-    margin-top: 320px;
-    margin-bottom: 20px;
-    padding: 11px 0 11px 0;
+    padding: 9px 0;
     background-color: #68b738;
     color: #ffffff;
     position: absolute;
     width: 280px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 286px 20px 20px 20px;
 
     &:hover {
       background-color: #5eaa2f;
@@ -54,10 +51,10 @@
     position: absolute;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 85%;
     min-height: 273px;
     top: 167px;
-    left: 0;
+    left: 26px;
   }
 }
 
@@ -68,10 +65,11 @@
     position: relative;
     background-image: none;
     padding-bottom: 0;
-    margin-bottom: 71px;
+    margin-bottom: 0;
     &__img {
       top: 200px;
       left: 0;
+      width: 100%;
     }
     &__pic {
       width: 709px;
@@ -91,7 +89,7 @@
       color: #111111;
       text-align: left;
       margin-left: 90px;
-      margin-top: 55px;
+      margin-top: 51px;
       font-size: 20px;
       line-height: 20px;
       min-width: 320px;
@@ -142,6 +140,7 @@
       bottom: 0;
       background: #64a83b url("../img/index-background-desktop@1x.jpg") no-repeat top right;
       background-size: cover;
+
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background: #64a83b url("../img/index-background-desktop@2x.jpg") no-repeat top right;
       }
