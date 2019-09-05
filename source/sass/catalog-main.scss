@@ -18,15 +18,16 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-bottom: 24px;
-    padding-top: 42px;
-    margin: -22px auto 0 auto;
+    padding-bottom: 3px;
+    padding-top: 21px;
+    margin: -22px auto 22px auto;
     border-bottom: 1px solid #ededed;
   }
 }
 
 .catalog-pic {
   margin-top: -19px;
+  margin-left: 20px;
 }
 
 .catalog-wrapper {
@@ -65,10 +66,7 @@
     padding: 9px 0 9px 0;
     background-color: #68b738;
     color: #ffffff;
-    margin-top: -5px;
-    margin-bottom: 16px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin: -8px 20px 16px 20px;
     flex-grow: 1;
 
     &:hover {
@@ -137,7 +135,7 @@
       justify-content: space-between;
       width: 324px;
       background-color: #f2f2f2;
-      margin: 100px 0 50px 0;
+      margin: 84px 0 50px 0;
       padding-bottom: 40px;
       & picture {
         display: block;
@@ -149,6 +147,8 @@
       border-bottom: none;
       margin-left: 0;
       padding-left: 0;
+      font-size: 60px;
+      padding-top: 10px;
     }
   }
   .catalog-wrapper {
@@ -168,6 +168,8 @@
     padding-left: 37px;
     &__intro {
       text-align: center;
+      font-size: 20px;
+      padding-top: 18px;
     }
     &__show {
       width: 322px;
@@ -176,15 +178,17 @@
       padding-bottom: 40px;
       border: 1px solid #cdcdcd;
       margin-bottom: 50px;
-      margin-top: 102px;
+      margin-top: 85px;
     }
     &__order {
       flex-grow: 0;
       margin-right: 37px;
       margin-left: 37px;
-      margin-top: 16px;
+      margin-top: 13px;
     }
     &__list {
+      font-size: 16px;
+      padding-top: 7px;
       & td {
         padding-bottom: 8px;
         padding-top: 5px;
@@ -205,7 +209,7 @@
       padding-left: 80px;
     }
     &__button {
-      margin-top: 20px;
+      margin-top: 109px;
       margin-right: 37px;
       margin-left: 37px;
     }
@@ -215,7 +219,7 @@
     }
   }
   .catalog-pic {
-    margin-top: -120px;
+    margin-top: -104px;
     margin-left: auto;
   }
 }
@@ -246,6 +250,7 @@
     &__show {
       width: 245px;
       margin-right: 0;
+      margin-top: 83px;
     }
   }
   .show-more {
@@ -263,6 +268,9 @@
     }
     &__img {
       margin-top: 54px;
+    }
+    &__button {
+      margin-top: 80px;
     }
   }
 

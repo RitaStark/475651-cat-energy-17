@@ -1,11 +1,34 @@
 .social {
   &__link {
     &--svg {
+      margin-right: -12px;
       &:hover {
         fill: #68b738;
       }
       &:active {
         fill: #c8e0ba;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+    padding-left: 10px;
+    &__link {
+      &--svg {
+        width: 28px;
+        height: 28px;
+      }
+      &--vk {
+        margin-right: 40px;
+      }
+      &--inst {
+        margin-right: 37px;
       }
     }
   }

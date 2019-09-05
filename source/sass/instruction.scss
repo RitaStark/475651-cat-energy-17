@@ -8,7 +8,8 @@
     font-size: 36px;
     font-weight: 400;
     font-family: "Oswald";
-    margin-bottom: 36px;
+    margin-bottom: 34px;
+    margin-top: 10px;
   }
 
   &__list {
@@ -143,15 +144,19 @@
       line-height: 24px;
       padding-top: 112px;
       padding-bottom: 70px;
-      margin-bottom: 82px;
+      margin-bottom: 84px;
       position: relative;
+      p {
+        padding-right: 80px;
+        margin-top: -2px;
+      }
       &::before {
         content: "";
         position: absolute;
         background-color: #68b738;
         width: 80px;
         height: 80px;
-        top: 0px;
+        top: -2px;
       }
       &--organic {
         &::after {
@@ -165,8 +170,8 @@
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
           &::after {
             background: url("../img/advantage-leaf@2x.png") no-repeat;
-            background-size: 80px 80px;
-            background-position: 0 0;
+            background-size: 54px 54px;
+            background-position: 12px 9px;
           }
         }
       }
@@ -183,8 +188,8 @@
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
           &::after {
             background: url("../img/advantage-powder@2x.png") no-repeat;
-            background-size: 80px 80px;
-            background-position: -13px -13px;
+            background-size: 54px 54px;
+            background-position: -2px -5px;
           }
         }
       }
@@ -202,8 +207,8 @@
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
           &::after {
             background: url("../img/advantage-dining@2x.png") no-repeat;
-            background-size: 80px 80px;
-            background-position: -13px -13px;
+            background-size: 54px 54px;
+            background-position: -2px -1px;
           }
         }
       }
@@ -220,8 +225,8 @@
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
           &::after {
             background: url("../img/advantage-clock@2x.png") no-repeat;
-            background-size: 80px 80px;
-            background-position: -13px -13px;
+            background-size: 54px 54px;
+            background-position: -2px -1px;
           }
         }
       }
@@ -235,6 +240,7 @@
     margin: 0 auto;
     &__header {
       margin-bottom: 56px;
+      margin-top: 55px;
     }
   }
   .advantage {
