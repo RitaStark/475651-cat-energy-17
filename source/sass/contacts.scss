@@ -24,3 +24,22 @@
     border: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    &__details {
+      width: 709px;
+      display: flex;
+      justify-content: space-between;
+      &--text {
+        width: 25%;
+        margin-left: 40px;
+      }
+      &--address {
+        width: 20%;
+        text-align: right;
+        margin-right: 40px;
+      }
+    }
+  }
+}
