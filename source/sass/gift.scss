@@ -1,0 +1,11 @@
+.gift {
+  width: 320px;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  background-size: 320px auto;
+  padding-top: 235px;
+  &__text {
+    padding: 0 87px;
+    text-align: center;
+    color: #ffff;
+  }
+}
