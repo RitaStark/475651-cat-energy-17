@@ -1,6 +1,7 @@
 .contacts {
   position: relative;
   align-items: center;
+  margin-bottom: -7px;
   &__details {
     display: flex;
     justify-content: space-between;
@@ -27,6 +28,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
+    margin-bottom: -7px;
     &__details {
       width: 709px;
       display: flex;
@@ -47,6 +49,7 @@
 @media (min-width: $desktop-width) {
   .contacts {
     position: relative;
+    margin-bottom: -7px;
     &__details {
       width: 570px;
       background-color: #ffffff;
