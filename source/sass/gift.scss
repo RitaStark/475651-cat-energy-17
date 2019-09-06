@@ -3,9 +3,19 @@
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
   background-size: 320px auto;
   padding-top: 235px;
+  position: relative;
   &__text {
     padding: 0 87px;
     text-align: center;
     color: #ffff;
+  }
+  ::before {
+    content: url("../img/icon-gift.svg");
+    position: absolute;
+    width: 56px;
+    height: 63px;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

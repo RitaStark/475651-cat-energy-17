@@ -109,8 +109,7 @@
 @media (min-width: $tablet-width) {
   .program-type {
     width: 709px;
-    margin-right: 0;
-    margin-left: 0;
+    margin: 0 auto;
     padding-bottom: 0;
     &__item {
       width: 709px;
@@ -210,8 +209,8 @@
     justify-content: space-between;
     box-sizing: border-box;
     position: relative;
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: auto;
+    margin-left: auto;
     &__item {
       width: 570px;
       &:first-child {
