@@ -55,7 +55,7 @@
     </section>
     <form class="programm__form profile">
       <section class="profile__main">
-        <div class="profile__main--wrap mobile-wrap">
+        <div class="profile__main--wrap">
           <label for="name">Имя:*</label>
           <input id="name" type="text" name="firstname" placeholder="Барсик" size="28"><br>
           <label for="weight">Вес(кг):*</label>
@@ -65,19 +65,19 @@
         </div>
       </section>
 
-      <section class="profile__contacts">
-        <div class="profile__contacts--wrap mobile-wrap reasons">
+      <section class="profile__reason">
+        <div class="profile__reason--wrap reasons">
           <ul class="reasons__list">
-            <li class="reasons__list--item">
-              <input type="radio" value="похудение" id="weight-less" name="reason">
+            <li class="reasons__list--item radio">
+              <input type="radio" value="похудение" id="weight-less" name="reason" class="radio__item" checked>
               <label for="weight-less">Похудение</label>
             </li>
-            <li class="reasons__list--item">
-              <input type="radio" value="набор массы" id="weight-gain" name="reason">
+            <li class="reasons__list--item radio">
+              <input type="radio" value="набор массы" id="weight-gain" name="reason" class="radio__item">
               <label for="weight-gain">Набор массы</label>
             </li>
-            <li class="reasons__list--item">
-              <input type="radio" value="совет" id="hz" name="reason">
+            <li class="reasons__list--item radio">
+              <input type="radio" value="совет" id="hz" name="reason" class="radio__item">
               <label for="hz">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
@@ -85,47 +85,47 @@
       </section>
 
       <section class="profile__owner">
-        <div class="profile__owner--wrap owner-info mobile-wrap">
+        <div class="profile__owner--wrap owner-info">
           <h2 class="owner-info__header">Контактные данные (владельца кота)</h2>
           <label for="email">e-mail:*</label>
           <input id="email" type="email" name="email" placeholder="kuklachev@gmail.com" size="28"><br>
           <label for="phone">телефон:*</label>
-          <input id="phone" type="tel" name="phone" placeholder="8(960)0010101" size="25"><br>
+          <input id="phone" type="tel" name="phone" placeholder="8(960)0010101" size="25">
         </div>
       </section>
 
       <section class="profile__comments">
-        <div class="profile__comments--wrap mobile-wrap">
-          <h2>Комментарий</h2>
-          <textarea name="user-text" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <div class="profile__comments--wrap comment">
+          <h2 class="comment__header">Комментарий</h2>
+          <textarea name="user-text" class="comment__holder" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
 
       </section>
 
       <section class="profile__extra">
-        <div class="profile__extra--wrap mobile-wrap food">
+        <div class="profile__extra--wrap food">
           <h2 class="food__header">Дополнительно</h2>
           <ul class="food__list">
-            <li class="food__list--item">
-              <input type="checkbox" id="sugar" value="notsugar" name="food-type">
+            <li class="food__list--item check">
+              <input type="checkbox" id="sugar" value="notsugar" name="food-type" class="check__item" checked>
               <label for="sugar">Сахарозаменитель</label>
             </li>
-            <li class="food__list--item">
-              <input type="checkbox" id="water" value="water" name="food-type">
+            <li class="food__list--item check">
+              <input type="checkbox" id="water" value="water" name="food-type" class="check__item">
               <label for="water">Питьевая вода</label>
             </li>
-            <li class="food__list--item">
-              <input type="checkbox" id="milk" value="milk" name="food-type">
+            <li class="food__list--item check">
+              <input type="checkbox" id="milk" value="milk" name="food-type" class="check__item">
               <label for="milk">Молоко</label>
             </li>
-            <li class="food__list--item">
-              <input type="checkbox" id="vitamin" value="vitamin" name="food-type">
+            <li class="food__list--item check">
+              <input type="checkbox" id="vitamin" value="vitamin" name="food-type" class="check__item">
               <label for="vitamin">Витамины</label>
             </li>
           </ul>
         </div>
       </section>
-      <div class="profile__submit mobile-wrap">
+      <div class="profile__submit">
         <button type="submit" class="profile__submit--btn btn">Отправить заявку</button>
         <p class="profile__submit--mark">*- Обязательные поля</p>
       </div>
