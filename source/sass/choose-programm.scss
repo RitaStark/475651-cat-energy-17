@@ -1,0 +1,18 @@
+.choose-programm {
+  width: 320px;
+  margin: 0 auto;
+}
+.programm {
+  &__header {
+    font-size: 36px;
+    font-weight: 400;
+  }
+  &__intro {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  &__form {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}

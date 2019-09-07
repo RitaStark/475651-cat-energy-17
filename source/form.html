@@ -47,8 +47,100 @@
       </nav>
     </div>
   </header>
-  <main class="">
+  <main class="form-wrapper">
+    <section class="choose-programm programm">
+      <h1 class="programm__header">Подбор программы</h1>
+      <p class="programm__intro">Заполните анкету и мы подберем
+        программу питания для вашего кота</p>
+    </section>
+    <form class="programm__form profile">
+      <section class="profile__main">
+        <div class="profile__main--wrap mobile-wrap">
+          <label for="name">Имя:*</label>
+          <input id="name" type="text" name="firstname" placeholder="Барсик" size="28"><br>
+          <label for="weight">Вес(кг):*</label>
+          <input id="weight" type="text" name="cat-weight" placeholder="7" size="25"><br>
+          <label for="age">Возвраст (лет):</label>
+          <input id="age" type="text" name="cat-age" placeholder="7" size="21">
+        </div>
+      </section>
 
+      <section class="profile__contacts">
+        <div class="profile__contacts--wrap mobile-wrap reasons">
+          <ul class="reasons__list">
+            <li class="reasons__list--item">
+              <input type="radio" value="похудение" id="weight-less" name="reason">
+              <label for="weight-less">Похудение</label>
+            </li>
+            <li class="reasons__list--item">
+              <input type="radio" value="набор массы" id="weight-gain" name="reason">
+              <label for="weight-gain">Набор массы</label>
+            </li>
+            <li class="reasons__list--item">
+              <input type="radio" value="совет" id="hz" name="reason">
+              <label for="hz">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="profile__owner">
+        <div class="profile__owner--wrap owner-info mobile-wrap">
+          <h2 class="owner-info__header">Контактные данные (владельца кота)</h2>
+          <label for="email">e-mail:*</label>
+          <input id="email" type="email" name="email" placeholder="kuklachev@gmail.com" size="28"><br>
+          <label for="phone">телефон:*</label>
+          <input id="phone" type="tel" name="phone" placeholder="8(960)0010101" size="25"><br>
+        </div>
+      </section>
+
+      <section class="profile__comments">
+        <div class="profile__comments--wrap mobile-wrap">
+          <h2>Комментарий</h2>
+          <textarea name="user-text" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
+
+      </section>
+
+      <section class="profile__extra">
+        <div class="profile__extra--wrap mobile-wrap food">
+          <h2 class="food__header">Дополнительно</h2>
+          <ul class="food__list">
+            <li class="food__list--item">
+              <input type="checkbox" id="sugar" value="notsugar" name="food-type">
+              <label for="sugar">Сахарозаменитель</label>
+            </li>
+            <li class="food__list--item">
+              <input type="checkbox" id="water" value="water" name="food-type">
+              <label for="water">Питьевая вода</label>
+            </li>
+            <li class="food__list--item">
+              <input type="checkbox" id="milk" value="milk" name="food-type">
+              <label for="milk">Молоко</label>
+            </li>
+            <li class="food__list--item">
+              <input type="checkbox" id="vitamin" value="vitamin" name="food-type">
+              <label for="vitamin">Витамины</label>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="profile__submit mobile-wrap">
+        <button type="submit" class="profile__submit--btn btn">Отправить заявку</button>
+        <p class="profile__submit--mark">*- Обязательные поля</p>
+      </div>
+
+    </form>
+
+
+    <section class="contacts">
+      <div class="contacts__details">
+        <p class="contacts__details--text">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__details--address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CGSURU1c" width="560" height="400" frameborder="1"
+        allowfullscreen="true"></iframe>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer-wrapper">

@@ -1,0 +1,98 @@
+.mobile-wrap {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.profile {
+  &__main {
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 23px;
+    text-align: right;
+    clear: both;
+    line-height: 35px;
+    border-bottom: 1px solid #ededed;
+  }
+  label {
+    float: left;
+  }
+  &__main {
+    input[type="text"] {
+      padding: 10px 10px 10px 15px;
+      margin-bottom: 10px;
+    }
+  }
+  &__contacts {
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 23px;
+  }
+  &__owner {
+    text-align: right;
+    clear: both;
+    line-height: 35px;
+    border-bottom: 1px solid #ededed;
+    &--wrap {
+      border-bottom: 1px solid #ededed;
+      padding-bottom: 23px;
+      input[type="email"] {
+        padding: 10px 10px 10px 15px;
+        margin-bottom: 10px;
+      }
+      input[type="tel"] {
+        padding: 10px 10px 10px 15px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &__comments {
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 23px;
+    textarea {
+      width: 100%;
+      resize: vertical;
+      min-height: 148px;
+    }
+  }
+  &__submit {
+    &--btn {
+      width: 100%;
+      background-color: #68b738;
+      font-family: "Oswald", "Arial", sans-serif;
+      border: none;
+      color: #ffffff;
+      font-size: 16px;
+      padding: 9px 0;
+      margin-bottom: 30px;
+    }
+    &--mark {
+      text-align: center;
+      font-size: 14px;
+      font-family: "Arial";
+      text-transform: none;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.reasons {
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    &--item {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.owner-info {
+  &__header {
+    text-align: left;
+  }
+}
+
+.food {
+  &__list {
+    padding-left: 0;
+    list-style: none;
+  }
+}
