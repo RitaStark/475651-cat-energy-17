@@ -8,34 +8,33 @@ input[type="checkbox"] {
     border-bottom: 1px solid #ededed;
     padding-bottom: 17px;
     &--wrap {
-      width: 320px;
+      width: 280px;
       margin: 0 auto;
     }
   }
   &__main {
-    padding-right: 70px;
-    padding-left: 70px;
     text-align: right;
     clear: both;
     line-height: 35px;
     border-bottom: 1px solid #ededed;
-    width: 320px;
-    margin: 0 auto;
-  }
-  &__main {
     input[type="text"] {
       padding: 10px 10px 10px 15px;
       margin-bottom: 10px;
     }
+    &--wrap {
+      margin: 0 auto;
+      width: 280px;
+    }
   }
 
   &__owner {
+    margin: 0 auto;
     text-align: right;
     clear: both;
     line-height: 35px;
     border-bottom: 1px solid #ededed;
     &--wrap {
-      width: 320px;
+      width: 280px;
       margin: 0 auto;
       border-bottom: 1px solid #ededed;
       padding-bottom: 23px;
@@ -58,12 +57,12 @@ input[type="checkbox"] {
       min-height: 148px;
     }
     &--wrap {
-      width: 320px;
+      width: 280px;
       margin: 0 auto;
     }
   }
   &__submit {
-    width: 320px;
+    width: 280px;
     margin: 0 auto;
     &--btn {
       width: 100%;
@@ -74,6 +73,12 @@ input[type="checkbox"] {
       font-size: 16px;
       padding: 9px 0;
       margin-bottom: 30px;
+      &:hover {
+        background-color: #5eaa2f;
+      }
+      &:active {
+        color: #99c684;
+      }
     }
     &--mark {
       text-align: center;
@@ -86,7 +91,7 @@ input[type="checkbox"] {
   &__extra {
     margin-bottom: 30px;
     &--wrap {
-      width: 320px;
+      width: 280px;
       margin: 0 auto;
     }
   }
@@ -100,6 +105,9 @@ input[type="checkbox"] {
       position: relative;
       padding-left: 40px;
       margin-bottom: 20px;
+      &:active {
+        opacity: 0.5;
+      }
       label {
         &::before {
           content: "";
@@ -123,7 +131,7 @@ input[type="checkbox"] {
       width: 165px;
       height: 3px;
       background-color: #68b738;
-      right: -25px;
+      right: -46px;
       top: 20px;
     }
   }
@@ -139,6 +147,8 @@ input[type="checkbox"] {
         height: 30px;
         background-image: url("../img/icon-tick.svg");
         background-repeat: no-repeat;
+        background-size: 20px 20px;
+        background-position: center;
         left: 0;
       }
     }
@@ -146,6 +156,10 @@ input[type="checkbox"] {
 }
 
 .comment {
+  textarea {
+    text-transform: uppercase;
+    font-family: "Oswald", "Arial", sans-serif;
+  }
   &__header {
     text-transform: none;
     position: relative;
@@ -155,7 +169,7 @@ input[type="checkbox"] {
       width: 190px;
       height: 3px;
       background-color: #68b738;
-      right: -25px;
+      right: -52px;
       top: 20px;
     }
   }
@@ -170,11 +184,17 @@ input[type="checkbox"] {
   &__container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 12px;
     input {
       flex-grow: 1;
       text-transform: uppercase;
       font-family: "Oswald", "Arial", sans-serif;
+      outline: none;
+      &:focus {
+        border: 1px solid black;
+      }
+      &:invalid {
+        border: 1px solid red;
+      }
     }
     label {
       margin-right: 5px;
@@ -185,13 +205,13 @@ input[type="checkbox"] {
 @media (min-width: $tablet-width) {
   .profile {
     &__main {
-      width: 709px;
-      margin: 0 auto;
       padding-left: 0;
       border-bottom: none;
-
+      margin-right: 40px;
       &--wrap {
         font-size: 20px;
+        width: 709px;
+        margin: 0 auto;
       }
     }
     &__reason {
@@ -205,6 +225,7 @@ input[type="checkbox"] {
 
     &__owner {
       border-bottom: none;
+      width: 709px;
       &--wrap {
         width: 709px;
         margin: 0 auto;
@@ -327,6 +348,7 @@ input[type="checkbox"] {
       &--wrap {
         input[type="text"] {
           margin-bottom: 50px;
+          width: 50%;
         }
       }
     }
@@ -339,6 +361,7 @@ input[type="checkbox"] {
     }
 
     &__owner {
+      width: 1220px;
       border-bottom: none;
       &--wrap {
         input[type="text"] {
@@ -363,6 +386,10 @@ input[type="checkbox"] {
   }
 
   .comment {
+    textarea {
+      text-transform: uppercase;
+      font-family: "Oswald", "Arial", sans-serif;
+    }
     &__header {
       position: relative;
       &::before {
@@ -406,6 +433,7 @@ input[type="checkbox"] {
     &__container {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 0;
       input {
         flex-grow: 1;
       }

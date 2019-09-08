@@ -1,11 +1,10 @@
 .owner-info {
   &__header {
+    width: 280px;
+    margin: 7px auto 40px auto;
     text-align: left;
     text-transform: none;
     position: relative;
-    width: 285px;
-    margin-left: 65px;
-    margin-bottom: 40px;
     line-height: 27px;
     &::before {
       content: "";
@@ -13,8 +12,8 @@
       width: 100px;
       height: 3px;
       background-color: #68b738;
-      right: -53px;
-      top: 20px;
+      right: -22px;
+      top: 15px;
     }
   }
   &__mail-label {
@@ -23,7 +22,7 @@
       content: "";
       background: url("../img/icon-mail.svg") no-repeat;
       position: absolute;
-      right: -257px;
+      right: -218px;
       top: 15px;
       width: 17px;
       height: 13px;
@@ -35,7 +34,7 @@
       content: "";
       background: url("../img/icon-phone.svg") no-repeat;
       position: absolute;
-      right: -244px;
+      right: -205px;
       top: 8px;
       width: 20px;
       height: 20px;
@@ -46,13 +45,18 @@
     justify-content: space-between;
     input {
       flex-grow: 1;
+      outline: none;
+      text-transform: uppercase;
+      font-family: "Oswald", "Arial", sans-serif;
+      &:focus {
+        border: 1px solid black;
+      }
+      &:invalid {
+        border: 1px solid red;
+      }
     }
     label {
       margin-right: 5px;
-    }
-    input {
-      text-transform: uppercase;
-      font-family: "Oswald", "Arial", sans-serif;
     }
   }
 }

@@ -5,8 +5,8 @@
   &__details {
     display: flex;
     justify-content: space-between;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: 30px;
     background-color: #f2f2f2;
 
@@ -20,7 +20,6 @@
       font-size: 14px;
       line-height: 20px;
       font-family: "Arial", sans-serif;
-      margin-right: 20px;
     }
   }
   iframe {
@@ -32,7 +31,6 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    // margin-bottom: -7px;
     margin-top: 30px;
     background-color: #f2f2f2;
     &__details {
@@ -40,15 +38,13 @@
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
-      padding: 50px;
+      padding-left: 20px;
       &--text {
         width: 25%;
-        margin-left: 40px;
       }
       &--address {
         width: 20%;
         text-align: right;
-        margin-right: 60px;
       }
     }
   }

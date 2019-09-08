@@ -5,6 +5,10 @@
     &--item {
       margin-bottom: 17px;
       position: relative;
+      margin-top: 27px;
+      &:active {
+        opacity: 0.5;
+      }
       label {
         padding-left: 46px;
         &::before {

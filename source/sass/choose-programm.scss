@@ -1,5 +1,5 @@
 .choose-programm {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
 }
 .programm {
@@ -13,6 +13,7 @@
   &__intro {
     font-size: 14px;
     text-transform: uppercase;
+    margin-top: 50px;
   }
   &__form {
     font-size: 16px;
@@ -31,6 +32,8 @@
     }
     &__intro {
       font-size: 20px;
+      // margin-left: 40px;
+      width: 335px;
     }
     &__form {
       width: 709px;
