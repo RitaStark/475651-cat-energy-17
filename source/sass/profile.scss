@@ -90,63 +90,6 @@
   }
 }
 
-.reasons {
-  &__list {
-    list-style: none;
-    padding-left: 0;
-    &--item {
-      margin-bottom: 10px;
-      position: relative;
-      label {
-        padding-left: 40px;
-        &::before {
-          content: "";
-          position: absolute;
-          width: 30px;
-          height: 30px;
-          background-image: url("../img/radio-off.svg");
-          background-repeat: no-repeat;
-          left: 0;
-        }
-      }
-    }
-  }
-}
-
-.radio {
-  &__item {
-    &:checked + label {
-      &::before {
-        content: "";
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        background-image: url("../img/radio-on.svg");
-        background-repeat: no-repeat;
-        left: 0;
-      }
-    }
-  }
-}
-
-.owner-info {
-  &__header {
-    text-align: left;
-    text-transform: none;
-    position: relative;
-    width: 285px;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100px;
-      height: 3px;
-      background-color: #68b738;
-      right: -53px;
-      top: 20px;
-    }
-  }
-}
-
 .food {
   &__list {
     padding-left: 0;
@@ -274,39 +217,6 @@
     }
   }
 
-  .owner-info {
-    &__header {
-      font-size: 36px;
-      font-weight: 500;
-      position: relative;
-      width: 540px;
-      &::before {
-        content: "";
-        position: absolute;
-        width: 200px;
-        height: 3px;
-        background-color: #68b738;
-        right: -193px;
-        top: 20px;
-      }
-      &::after {
-        content: "";
-        position: absolute;
-        width: 50px;
-        height: 3px;
-        background-color: #68b738;
-        left: -80px;
-        top: 20px;
-      }
-    }
-  }
-
-  .reasons {
-    &__list {
-      padding-left: 30px;
-    }
-  }
-
   .comment {
     &__header {
       font-size: 36px;
@@ -361,8 +271,97 @@
       flex-wrap: wrap;
       justify-content: space-between;
       &--item {
-        margin-right: 20px;
+        margin-right: 80px;
+        &:last-child {
+          margin-right: 119px;
+        }
       }
     }
   }
+}
+
+@media (min-width: $desktop-width) {
+  .profile {
+    width: 1220px;
+    &__main {
+      width: 50%;
+      margin: 0 auto;
+      &--wrap {
+        input[type="text"] {
+          margin-bottom: 50px;
+        }
+      }
+    }
+    &__reason {
+      width: 50%;
+      &--wrap {
+        width: 570px;
+      }
+    }
+    &__owner {
+      &--wrap {
+        input[type="text"] {
+          margin-bottom: 50px;
+        }
+      }
+    }
+    &__comments {
+      &--wrap {
+        width: 1220px;
+      }
+    }
+    &__extra {
+      &--wrap {
+        width: 1220px;
+      }
+    }
+    &__submit {
+      width: 1220px;
+    }
+  }
+
+  .comment {
+    &__header {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1030px;
+        height: 3px;
+        background-color: #68b738;
+        right: -69px;
+        top: 20px;
+      }
+    }
+  }
+  .main-reason-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .food {
+    &__header {
+      font-size: 36px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1050px;
+        height: 3px;
+        background-color: #68b738;
+        right: -69px;
+        top: 28px;
+      }
+    }
+    &__list {
+      &--item {
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  // input[type="radio"],
+  // input[type="checkbox"] {
+  //   display: none;
+  // }
 }

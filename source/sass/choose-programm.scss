@@ -37,3 +37,17 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programm {
+    width: 1220px;
+    margin: 0 auto;
+    &__header {
+      font-size: 60px;
+    }
+    &__intro {
+      font-size: 20px;
+      width: 330px;
+    }
+  }
+}

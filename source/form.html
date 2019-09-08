@@ -54,41 +54,43 @@
         программу питания для вашего кота</p>
     </section>
     <form class="programm__form profile">
-      <section class="profile__main">
-        <div class="profile__main--wrap">
-          <label for="name">Имя:*</label>
-          <input id="name" type="text" name="firstname" placeholder="Барсик" size="28"><br>
-          <label for="weight">Вес(кг):*</label>
-          <input id="weight" type="text" name="cat-weight" placeholder="7" size="25"><br>
-          <label for="age">Возвраст (лет):</label>
-          <input id="age" type="text" name="cat-age" placeholder="7" size="21">
-        </div>
-      </section>
-
-      <section class="profile__reason">
-        <div class="profile__reason--wrap reasons">
-          <ul class="reasons__list">
-            <li class="reasons__list--item radio">
-              <input type="radio" value="похудение" id="weight-less" name="reason" class="radio__item" checked>
-              <label for="weight-less">Похудение</label>
-            </li>
-            <li class="reasons__list--item radio">
-              <input type="radio" value="набор массы" id="weight-gain" name="reason" class="radio__item">
-              <label for="weight-gain">Набор массы</label>
-            </li>
-            <li class="reasons__list--item radio">
-              <input type="radio" value="совет" id="hz" name="reason" class="radio__item">
-              <label for="hz">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <div class="main-reason-wrap">
+        <section class="profile__main">
+          <div class="profile__main--wrap">
+            <label for="name">Имя:*</label>
+            <input id="name" type="text" name="firstname" placeholder="Барсик" size="28" width="100%"><br>
+            <label for="weight">Вес(кг):*</label>
+            <input id="weight" type="text" name="cat-weight" placeholder="7" size="25"><br>
+            <label for="age">Возвраст (лет):</label>
+            <input id="age" type="text" name="cat-age" placeholder="7" size="21">
+          </div>
+        </section>
+        <section class="profile__reason">
+          <div class="profile__reason--wrap reasons">
+            <ul class="reasons__list">
+              <li class="reasons__list--item radio">
+                <input type="radio" value="похудение" id="weight-less" name="reason" class="radio__item" checked>
+                <label for="weight-less">Похудение</label>
+              </li>
+              <li class="reasons__list--item radio">
+                <input type="radio" value="набор массы" id="weight-gain" name="reason" class="radio__item">
+                <label for="weight-gain">Набор массы</label>
+              </li>
+              <li class="reasons__list--item radio">
+                <input type="radio" value="совет" id="hz" name="reason" class="radio__item">
+                <label for="hz">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
 
       <section class="profile__owner">
+        <h2 class="owner-info__header">Контактные данные (владельца кота)</h2>
         <div class="profile__owner--wrap owner-info">
-          <h2 class="owner-info__header">Контактные данные (владельца кота)</h2>
           <label for="email">e-mail:*</label>
-          <input id="email" type="email" name="email" placeholder="kuklachev@gmail.com" size="28"><br>
+          <input id="email" type="email" name="email" placeholder="kuklachev@gmail.com" size="28"
+            class="owner-info__email"><br>
           <label for="phone">телефон:*</label>
           <input id="phone" type="tel" name="phone" placeholder="8(960)0010101" size="25">
         </div>
