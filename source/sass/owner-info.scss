@@ -15,6 +15,30 @@
       top: 20px;
     }
   }
+  &__mail-label {
+    position: relative;
+    &::before {
+      content: "";
+      background: url("../img/icon-mail.svg") no-repeat;
+      position: absolute;
+      right: -257px;
+      top: 15px;
+      width: 17px;
+      height: 13px;
+    }
+  }
+  &__phone-label {
+    position: relative;
+    &::before {
+      content: "";
+      background: url("../img/icon-phone.svg") no-repeat;
+      position: absolute;
+      right: -244px;
+      top: 8px;
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -24,6 +48,7 @@
       font-weight: 500;
       position: relative;
       width: 540px;
+      margin-left: 0;
       &::before {
         content: "";
         position: absolute;
@@ -43,16 +68,29 @@
         top: 20px;
       }
     }
-    &__email {
+
+    &__mail-label {
+      position: relative;
       &::before {
         content: "";
         background: url("../img/icon-mail.svg") no-repeat;
         position: absolute;
-        background-color: red;
-        right: 0;
-        top: 10px;
-        width: 25px;
-        height: 25px;
+        right: -634px;
+        top: 15px;
+        width: 17px;
+        height: 13px;
+      }
+    }
+    &__phone-label {
+      position: relative;
+      &::before {
+        content: "";
+        background: url("../img/icon-phone.svg") no-repeat;
+        position: absolute;
+        right: -618px;
+        top: 13px;
+        width: 20px;
+        height: 20px;
       }
     }
   }
@@ -72,6 +110,30 @@
         background-color: #68b738;
         right: -750px;
         top: 20px;
+      }
+    }
+    &__mail-label {
+      position: relative;
+      &::before {
+        content: "";
+        background: url("../img/icon-mail.svg") no-repeat;
+        position: absolute;
+        right: -392px;
+        top: 15px;
+        width: 17px;
+        height: 13px;
+      }
+    }
+    &__phone-label {
+      position: relative;
+      &::before {
+        content: "";
+        background: url("../img/icon-phone.svg") no-repeat;
+        position: absolute;
+        right: -376px;
+        top: 8px;
+        width: 20px;
+        height: 20px;
       }
     }
   }
