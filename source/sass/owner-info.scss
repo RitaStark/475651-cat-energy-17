@@ -5,6 +5,8 @@
     position: relative;
     width: 285px;
     margin-left: 65px;
+    margin-bottom: 40px;
+    line-height: 27px;
     &::before {
       content: "";
       position: absolute;
@@ -37,6 +39,20 @@
       top: 8px;
       width: 20px;
       height: 20px;
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    input {
+      flex-grow: 1;
+    }
+    label {
+      margin-right: 5px;
+    }
+    input {
+      text-transform: uppercase;
+      font-family: "Oswald", "Arial", sans-serif;
     }
   }
 }
@@ -93,6 +109,16 @@
         height: 20px;
       }
     }
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      input {
+        flex-grow: 1;
+      }
+      label {
+        margin-right: 20px;
+      }
+    }
   }
 }
 
@@ -118,8 +144,8 @@
         content: "";
         background: url("../img/icon-mail.svg") no-repeat;
         position: absolute;
-        right: -392px;
-        top: 15px;
+        right: -495px;
+        top: 13px;
         width: 17px;
         height: 13px;
       }
@@ -130,10 +156,24 @@
         content: "";
         background: url("../img/icon-phone.svg") no-repeat;
         position: absolute;
-        right: -376px;
+        right: -480px;
         top: 8px;
         width: 20px;
         height: 20px;
+      }
+    }
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      input {
+        flex-grow: 1;
+      }
+      label {
+        margin-right: 20px;
+      }
+      &:first-child {
+        margin-right: 70px;
       }
     }
   }
