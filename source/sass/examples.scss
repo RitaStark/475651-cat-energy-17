@@ -2,12 +2,13 @@
   background-color: #f2f2f2;
   margin: 0 auto;
   padding-top: 20px;
+  margin-top: 54px;
 
   &__header {
     width: 280px;
     font-size: 36px;
     font-weight: 400;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 27px auto;
   }
   &__descript {
     width: 280px;
@@ -92,6 +93,7 @@
   .examples {
     width: 709px;
     background: linear-gradient(#ffffff 50%, #f2f2f2 50%);
+    margin-top: -42px;
     &__header {
       width: 709px;
       margin: 20px 0 60px 0;
@@ -152,6 +154,7 @@
     width: 709px;
     display: flex;
     justify-content: flex-start;
+    margin-top: 38px;
     &__text {
       width: 136px;
       margin-left: 550px;

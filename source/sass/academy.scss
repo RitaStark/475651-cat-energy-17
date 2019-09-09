@@ -7,10 +7,15 @@
     text-decoration: none;
     color: #444444;
     margin-top: 20px;
+    margin-left: 20px;
     &:active {
       color: #c8c8c8;
     }
   }
+}
+
+.svg {
+  margin-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -20,5 +25,8 @@
       margin-top: 0;
       margin-right: 33px;
     }
+  }
+  .svg {
+    margin-right: 0;
   }
 }

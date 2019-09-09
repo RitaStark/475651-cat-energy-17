@@ -29,15 +29,17 @@
   .programm {
     &__header {
       font-size: 60px;
+      margin-top: 62px;
     }
     &__intro {
       font-size: 20px;
       margin-left: 40px;
       width: 335px;
+      margin-top: 76px;
     }
     &__form {
       width: 709px;
-      margin: 0 auto;
+      margin: 20px auto 0 auto;
       font-size: 20px;
     }
   }
