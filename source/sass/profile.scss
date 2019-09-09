@@ -52,12 +52,13 @@ input[type="checkbox"] {
     border-bottom: 1px solid #ededed;
     padding-bottom: 23px;
     textarea {
-      width: 100%;
       resize: vertical;
       resize: horizontal;
       min-height: 148px;
     }
     &--wrap {
+      display: flex;
+      flex-direction: column;
       width: 280px;
       margin: 0 auto;
     }
@@ -240,6 +241,8 @@ input[type="checkbox"] {
       &--wrap {
         width: 709px;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
       }
     }
     &__extra {
@@ -397,6 +400,7 @@ input[type="checkbox"] {
       width: 1220px;
       margin-left: 0;
       margin-right: 0;
+      margin-bottom: 30px;
     }
   }
 
