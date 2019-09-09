@@ -1,0 +1,225 @@
+.examples {
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  padding-top: 20px;
+
+  &__header {
+    width: 280px;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0 auto 20px auto;
+  }
+  &__descript {
+    width: 280px;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Arial", sans-serif;
+    margin: 0 auto;
+  }
+  &__img {
+    display: block;
+    margin: auto;
+  }
+  &__range {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &--after {
+      text-transform: uppercase;
+    }
+    &--before {
+      text-transform: uppercase;
+    }
+    &--slider {
+      width: 84px;
+      height: 14px;
+      border: 1px solid #cdcdcd;
+      border-radius: 10px;
+      margin-top: 21px;
+    }
+    &--button {
+      width: 40px;
+      height: 6px;
+      background-color: #68b738;
+      border-radius: 10px;
+      border: none;
+      position: absolute;
+      left: 101px;
+      top: 26px;
+    }
+  }
+}
+
+.details {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  &__text {
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
+
+.specific {
+  &__header {
+    font-size: 24px;
+    text-transform: uppercase;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    padding: 10px 10px;
+    margin-right: 10px;
+  }
+  &__text {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    padding: 0 25px 0 25px;
+    margin-top: -30px;
+    margin-right: 27px;
+    margin-left: 20px;
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .examples-wrapper {
+    background: linear-gradient(#ffffff 50%, #f2f2f2 50%);
+  }
+  .examples {
+    width: 709px;
+    background: linear-gradient(#ffffff 50%, #f2f2f2 50%);
+    &__header {
+      width: 709px;
+      margin: 20px 0 60px 0;
+      font-size: 60px;
+    }
+    &__descript {
+      width: 709px;
+      margin-left: 0;
+      margin-right: 0;
+      font-size: 16px;
+    }
+    &__range {
+      width: 709px;
+      padding-right: 80px;
+      padding-left: 80px;
+      padding-bottom: 70px;
+      box-sizing: border-box;
+      position: relative;
+      &--before {
+        text-transform: uppercase;
+        font-size: 20px;
+        border-bottom: 1px solid #d2d2d2;
+      }
+      &--after {
+        text-transform: uppercase;
+        font-size: 20px;
+        border-bottom: 1px solid #d2d2d2;
+      }
+      &--slider {
+        width: 428px;
+        height: 6px;
+        background-color: #dcdcdc;
+        margin-top: 30px;
+      }
+      &--button {
+        width: 34px;
+        height: 34px;
+        border: 1px solid #d2d2d2;
+        border-radius: 50%;
+        background-color: #ffffff;
+        position: absolute;
+        left: 345px;
+        top: 16px;
+        &::before {
+          content: "";
+          position: absolute;
+          border-radius: 50%;
+          width: 8px;
+          height: 8px;
+          top: 12px;
+          left: 12px;
+          background-color: #68b738;
+        }
+      }
+    }
+  }
+  .details {
+    width: 709px;
+    display: flex;
+    justify-content: flex-start;
+    &__text {
+      width: 136px;
+      margin-left: 550px;
+      margin-top: -60px;
+      text-align: right;
+    }
+  }
+  .specific {
+    &__header {
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+    &__text {
+      background-color: #ffffff;
+      padding-right: 5px;
+      padding-left: 5px;
+      margin-right: 21px;
+      margin-left: 12px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .examples-wrapper {
+    background: linear-gradient(#fff 0%, #fff 25%, #f2f2f2 25%, #f2f2f2 90%);
+  }
+  .examples {
+    width: 1220px;
+    background: linear-gradient(#fff 0%, #fff 25%, #f2f2f2 25%, #f2f2f2 90%);
+    &__descript {
+      width: 40%;
+      margin-bottom: 50px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &__img {
+      margin-top: -589px;
+      margin-right: -80px;
+    }
+    &__range {
+      margin-right: 0;
+      padding-left: 177px;
+      &--before {
+        margin-right: 20px;
+      }
+      &--after {
+        margin-left: 20px;
+      }
+    }
+  }
+  .details {
+    margin-left: 0;
+    margin-bottom: 50px;
+    &__text {
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 20px;
+      width: 270px;
+      font-size: 20px;
+    }
+  }
+  .specific {
+    &__header {
+      font-size: 30px;
+    }
+    &__text {
+      font-size: 14px;
+      background-color: #f2f2f2;
+    }
+  }
+}

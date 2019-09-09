@@ -49,10 +49,17 @@
         border-bottom: none;
       }
     }
-
-    &__item {
-      color: red;
+    &__form {
+      &:first-child {
+        border-bottom: none;
+      }
+      &:nth-child(3) {
+        border-bottom: 2px solid #68b738;
+      }
     }
+    // &__item {
+    //   color: red;
+    // }
   }
 }
 
@@ -77,12 +84,15 @@
         }
       }
     }
-    &--form {
+    &__form {
       &:first-child {
         border-bottom: none;
       }
       &:nth-child(3) {
         border-bottom: 2px solid #68b738;
+      }
+      a {
+        color: #111111;
       }
     }
   }

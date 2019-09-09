@@ -1,0 +1,88 @@
+.gift {
+  // width: 320px;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  background-size: 320px auto;
+  min-height: 289px;
+  position: relative;
+  background-position: center;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/gift-photo-mobile@2x.jpg") no-repeat;
+    background-size: 280px auto;
+    background-position: center;
+  }
+  &__text {
+    padding: 166px 99px 0 99px;
+    text-align: center;
+    color: #ffff;
+    max-width: 163px;
+    margin: 0 auto;
+  }
+  &::before {
+    content: url("../img/icon-gift.svg");
+    position: absolute;
+    width: 56px;
+    height: 63px;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    min-height: 199px;
+    background: url("../img/gift-photo-tablet@1x.jpg") no-repeat;
+    background-size: 709px auto;
+    background-position: center;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/gift-photo-tablet@2x.jpg") no-repeat;
+      background-size: 709px auto;
+      background-position: center;
+    }
+    &::before {
+      content: url("../img/icon-gift.svg");
+      position: absolute;
+      width: 56px;
+      height: 63px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 30%;
+    }
+    &__text {
+      font-size: 16px;
+      margin-left: 50%;
+      padding-top: 66px;
+      text-align: left;
+      font-family: "Arial";
+      font-weight: normal;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    margin-top: 162px;
+    position: relative;
+    background: url("../img/gift-photo-desktop@1x.jpg") no-repeat;
+    background-size: 246px auto;
+    min-height: 289px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/gift-photo-desktop@2x.jpg") no-repeat;
+      background-size: 246px auto;
+    }
+    &__text {
+      margin-left: 0;
+      padding: 186px 33px 0 33px;
+      text-align: center;
+    }
+    &::before {
+      content: url("../img/icon-gift.svg");
+      position: absolute;
+      width: 56px;
+      height: 63px;
+      top: 65px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
