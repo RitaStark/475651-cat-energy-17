@@ -32,7 +32,7 @@
     }
     &__intro {
       font-size: 20px;
-      // margin-left: 40px;
+      margin-left: 40px;
       width: 335px;
     }
     &__form {
@@ -53,6 +53,7 @@
     &__intro {
       font-size: 20px;
       width: 330px;
+      margin-left: 0;
     }
   }
 }

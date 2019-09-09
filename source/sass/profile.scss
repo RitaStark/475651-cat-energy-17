@@ -54,6 +54,7 @@ input[type="checkbox"] {
     textarea {
       width: 100%;
       resize: vertical;
+      resize: horizontal;
       min-height: 148px;
     }
     &--wrap {
@@ -207,7 +208,8 @@ input[type="checkbox"] {
     &__main {
       padding-left: 0;
       border-bottom: none;
-      // margin-right: 40px;
+      margin-left: 40px;
+      margin-right: 40px;
       &--wrap {
         font-size: 20px;
         width: auto;
@@ -218,7 +220,8 @@ input[type="checkbox"] {
       border-bottom: none;
       &--wrap {
         width: auto;
-        margin: 0 auto;
+        margin-left: 40px;
+        margin-right: 40px;
         border: 1px solid #e6e6e6;
       }
     }
@@ -247,7 +250,8 @@ input[type="checkbox"] {
     }
     &__submit {
       width: 709px;
-      margin: 0 auto;
+      margin-left: 40px;
+      margin-right: 40px;
       display: flex;
       justify-content: space-between;
       &--btn {
@@ -264,8 +268,12 @@ input[type="checkbox"] {
     textarea {
       text-transform: uppercase;
       font-family: "Oswald", "Arial", sans-serif;
+      margin-left: 40px;
+      margin-right: 40px;
     }
     &__header {
+      margin-left: 40px;
+      margin-right: 40px;
       font-size: 36px;
       font-weight: 500;
       position: relative;
@@ -275,7 +283,7 @@ input[type="checkbox"] {
         width: 527px;
         height: 3px;
         background-color: #68b738;
-        right: -25px;
+        right: -99px;
         top: 28px;
       }
       &::after {
@@ -294,13 +302,15 @@ input[type="checkbox"] {
     &__header {
       font-size: 36px;
       position: relative;
+      margin-left: 40px;
+      margin-right: 40px;
       &::before {
         content: "";
         position: absolute;
         width: 480px;
         height: 3px;
         background-color: #68b738;
-        right: -28px;
+        right: -92px;
         top: 28px;
       }
       &::after {
@@ -317,6 +327,8 @@ input[type="checkbox"] {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      margin-left: 40px;
+      // margin-right: 40px;
       &--item {
         margin-right: 80px;
         &:last-child {
@@ -357,6 +369,7 @@ input[type="checkbox"] {
       border-bottom: none;
       &--wrap {
         width: 570px;
+        margin-right: 0;
       }
     }
 
@@ -382,6 +395,8 @@ input[type="checkbox"] {
     }
     &__submit {
       width: 1220px;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 
@@ -389,9 +404,13 @@ input[type="checkbox"] {
     textarea {
       text-transform: uppercase;
       font-family: "Oswald", "Arial", sans-serif;
+      margin-left: 0;
+      margin-right: 0;
     }
     &__header {
       position: relative;
+      margin-left: 0;
+      margin-right: 0;
       &::before {
         content: "";
         position: absolute;
@@ -411,6 +430,8 @@ input[type="checkbox"] {
     &__header {
       font-size: 36px;
       position: relative;
+      margin-left: 0;
+      margin-right: 0;
       &::before {
         content: "";
         position: absolute;
@@ -422,6 +443,8 @@ input[type="checkbox"] {
       }
     }
     &__list {
+      margin-left: 0;
+      margin-right: 0;
       &--item {
         &:last-child {
           margin-right: 0;

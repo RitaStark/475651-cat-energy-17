@@ -43,6 +43,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
+
     input {
       flex-grow: 1;
       outline: none;
@@ -68,7 +69,8 @@
       font-weight: 500;
       position: relative;
       width: 540px;
-      margin-left: 0;
+      margin-left: 40px;
+      margin-right: 40px;
       &::before {
         content: "";
         position: absolute;
@@ -95,7 +97,7 @@
         content: "";
         background: url("../img/icon-mail.svg") no-repeat;
         position: absolute;
-        right: -634px;
+        right: -555px;
         top: 15px;
         width: 17px;
         height: 13px;
@@ -107,7 +109,7 @@
         content: "";
         background: url("../img/icon-phone.svg") no-repeat;
         position: absolute;
-        right: -618px;
+        right: -538px;
         top: 13px;
         width: 20px;
         height: 20px;
@@ -116,6 +118,8 @@
     &__container {
       display: flex;
       justify-content: space-between;
+      margin-left: 40px;
+      margin-right: 40px;
       input {
         flex-grow: 1;
       }
@@ -132,6 +136,8 @@
     display: flex;
     justify-content: space-between;
     &__header {
+      margin-left: 0;
+      margin-right: 0;
       &::before {
         content: "";
         position: absolute;
@@ -170,6 +176,8 @@
       display: flex;
       justify-content: space-between;
       width: 50%;
+      margin-left: 0;
+      margin-right: 0;
       input {
         flex-grow: 1;
       }
