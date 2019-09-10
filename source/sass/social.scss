@@ -1,13 +1,22 @@
 .social {
-  &__link {
-    &--svg {
-      margin-right: -12px;
-      &:hover {
-        fill: #68b738;
-      }
-      &:active {
-        fill: #c8e0ba;
-      }
+  &__svg {
+    margin-right: -12px;
+    &:hover {
+      fill: #68b738;
+    }
+    &:active {
+      fill: #c8e0ba;
+    }
+  }
+}
+.academy {
+  &__svg {
+    margin-right: -12px;
+    &:hover {
+      fill: #68b738;
+    }
+    &:active {
+      fill: #c8e0ba;
     }
   }
 }
@@ -19,17 +28,22 @@
     justify-content: space-between;
     padding-right: 0;
     padding-left: 10px;
-    &__link {
-      &--svg {
-        width: 28px;
-        height: 28px;
-      }
-      &--vk {
-        margin-right: 40px;
-      }
-      &--inst {
-        margin-right: 37px;
-      }
+
+    &__svg {
+      width: 28px;
+      height: 28px;
+    }
+    &__vk {
+      margin-right: 40px;
+    }
+    &__inst {
+      margin-right: 37px;
+    }
+  }
+  .academy {
+    &__svg {
+      width: 28px;
+      height: 28px;
     }
   }
 }
