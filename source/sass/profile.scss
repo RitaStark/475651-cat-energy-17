@@ -9,33 +9,33 @@ input[type="checkbox"] {
   font-size: 16px;
   text-transform: uppercase;
 
-  &__submit {
-    width: 280px;
-    margin: 0 auto;
-    &--btn {
-      width: 100%;
-      background-color: #68b738;
-      font-family: "Oswald", "Arial", sans-serif;
-      border: none;
-      color: #ffffff;
-      font-size: 16px;
-      padding: 9px 0;
-      margin-bottom: 30px;
-      &:hover {
-        background-color: #5eaa2f;
-      }
-      &:active {
-        color: #99c684;
-      }
-    }
-    &--mark {
-      text-align: center;
-      font-size: 14px;
-      font-family: "Arial";
-      text-transform: none;
-      margin-bottom: 30px;
-    }
-  }
+  // &__submit {
+  //   width: 280px;
+  //   margin: 0 auto;
+  //   &--btn {
+  //     width: 100%;
+  //     background-color: #68b738;
+  //     font-family: "Oswald", "Arial", sans-serif;
+  //     border: none;
+  //     color: #ffffff;
+  //     font-size: 16px;
+  //     padding: 9px 0;
+  //     margin-bottom: 30px;
+  //     &:hover {
+  //       background-color: #5eaa2f;
+  //     }
+  //     &:active {
+  //       color: #99c684;
+  //     }
+  //   }
+  //   &--mark {
+  //     text-align: center;
+  //     font-size: 14px;
+  //     font-family: "Arial";
+  //     text-transform: none;
+  //     margin-bottom: 30px;
+  //   }
+  // }
 }
 
 .data {
@@ -71,22 +71,22 @@ input[type="checkbox"] {
     margin: 20px auto 0 auto;
     font-size: 20px;
 
-    &__submit {
-      width: 709px;
-      margin-left: 40px;
-      margin-right: 40px;
-      display: flex;
-      justify-content: space-between;
-      &--btn {
-        width: 50%;
-        margin-right: 135px;
-        margin-top: 58px;
-      }
-      &--mark {
-        width: 50%;
-        margin-top: 58px;
-      }
-    }
+    // &__submit {
+    //   width: 709px;
+    //   margin-left: 40px;
+    //   margin-right: 40px;
+    //   display: flex;
+    //   justify-content: space-between;
+    //   &--btn {
+    //     width: 50%;
+    //     margin-right: 135px;
+    //     margin-top: 58px;
+    //   }
+    //   &--mark {
+    //     width: 50%;
+    //     margin-top: 58px;
+    //   }
+    // }
   }
 
   .data {
@@ -112,12 +112,12 @@ input[type="checkbox"] {
 @media (min-width: $desktop-width) {
   .profile {
     width: 1220px;
-    &__submit {
-      width: 1220px;
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom: 30px;
-    }
+    // &__submit {
+    //   width: 1220px;
+    //   margin-left: 0;
+    //   margin-right: 0;
+    //   margin-bottom: 30px;
+    // }
   }
 
   .data {

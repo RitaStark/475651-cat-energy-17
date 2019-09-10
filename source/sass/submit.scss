@@ -1,0 +1,55 @@
+.submit {
+  width: 280px;
+  margin: 0 auto;
+  &__btn {
+    width: 100%;
+    background-color: #68b738;
+    font-family: "Oswald", "Arial", sans-serif;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 9px 0;
+    margin-bottom: 30px;
+    &:hover {
+      background-color: #5eaa2f;
+    }
+    &:active {
+      color: #99c684;
+    }
+  }
+  &__mark {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Arial";
+    text-transform: none;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .submit {
+    width: 709px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    &__btn {
+      width: 50%;
+      margin-right: 135px;
+      margin-top: 58px;
+    }
+    &__mark {
+      width: 50%;
+      margin-top: 58px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .submit {
+    width: 1220px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
