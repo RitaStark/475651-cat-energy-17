@@ -1,21 +1,21 @@
 .owner-info {
-  &__header {
-    width: 280px;
-    margin: 7px auto 40px auto;
-    text-align: left;
-    text-transform: none;
-    position: relative;
-    line-height: 27px;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 98px;
-      height: 3px;
-      background-color: #68b738;
-      right: -17px;
-      top: 15px;
-    }
-  }
+  // &__header {
+  //   width: 280px;
+  //   margin: 7px auto 40px auto;
+  //   text-align: left;
+  //   text-transform: none;
+  //   position: relative;
+  //   line-height: 27px;
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     width: 98px;
+  //     height: 3px;
+  //     background-color: #68b738;
+  //     right: -17px;
+  //     top: 15px;
+  //   }
+  // }
   &__email {
     // position: relative;
     // &--icon {
@@ -27,15 +27,13 @@
     //   }
     // }
   }
-  &__mail-label {
-    &--icon {
-      fill: #222222;
-      position: absolute;
-      right: 10px;
-      top: 18px;
-      &:active {
-        fill: #68b738;
-      }
+  &__icon {
+    fill: #222222;
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    &:active {
+      fill: #68b738;
     }
     // &::before {
     //   content: "";
@@ -47,16 +45,15 @@
     //   height: 13px;
     // }
   }
-  &__phone-label {
-    &--icon {
-      fill: #222222;
-      position: absolute;
-      right: 10px;
-      top: 17px;
-      &:active {
-        fill: #68b738;
-      }
+  &__icon {
+    fill: #222222;
+    position: absolute;
+    right: 10px;
+    top: 17px;
+    &:active {
+      fill: #68b738;
     }
+
     // position: relative;
     // &::before {
     //   content: "";
@@ -93,34 +90,34 @@
 
 @media (min-width: $tablet-width) {
   .owner-info {
-    &__header {
-      font-size: 36px;
-      font-weight: 500;
-      position: relative;
-      width: 540px;
-      margin-left: 40px;
-      margin-right: 40px;
-      margin-top: 26px;
-      margin-bottom: 100px;
-      &::before {
-        content: "";
-        position: absolute;
-        width: 200px;
-        height: 3px;
-        background-color: #68b738;
-        right: -193px;
-        top: 20px;
-      }
-      &::after {
-        content: "";
-        position: absolute;
-        width: 50px;
-        height: 3px;
-        background-color: #68b738;
-        left: -80px;
-        top: 20px;
-      }
-    }
+    // &__header {
+    //   font-size: 36px;
+    //   font-weight: 500;
+    //   position: relative;
+    //   width: 540px;
+    //   margin-left: 40px;
+    //   margin-right: 40px;
+    //   margin-top: 26px;
+    //   margin-bottom: 100px;
+    //   &::before {
+    //     content: "";
+    //     position: absolute;
+    //     width: 200px;
+    //     height: 3px;
+    //     background-color: #68b738;
+    //     right: -193px;
+    //     top: 20px;
+    //   }
+    //   &::after {
+    //     content: "";
+    //     position: absolute;
+    //     width: 50px;
+    //     height: 3px;
+    //     background-color: #68b738;
+    //     left: -80px;
+    //     top: 20px;
+    //   }
+    // }
 
     // &__mail-label {
     //   position: relative;
@@ -163,23 +160,23 @@
 
 @media (min-width: $desktop-width) {
   .owner-info {
-    width: 1220px;
+    // width: 1220px;
     display: flex;
     justify-content: space-between;
-    &__header {
-      margin-left: 0;
-      margin-right: 0;
-      &::before {
-        content: "";
-        position: absolute;
-        width: 714px;
-        height: 3px;
-        background-color: #68b738;
-        right: -750px;
-        top: 20px;
-      }
-    }
-    &__mail-label {
+    // &__header {
+    //   margin-left: 0;
+    //   margin-right: 0;
+    //   &::before {
+    //     content: "";
+    //     position: absolute;
+    //     width: 714px;
+    //     height: 3px;
+    //     background-color: #68b738;
+    //     right: -750px;
+    //     top: 20px;
+    //   }
+    // }
+    &__icon {
       position: relative;
       // &::before {
       //   content: "";

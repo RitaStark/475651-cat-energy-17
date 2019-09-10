@@ -9,27 +9,6 @@ input[type="checkbox"] {
   font-size: 16px;
   text-transform: uppercase;
 
-  &__owner {
-    margin: 0 auto;
-    text-align: right;
-    clear: both;
-    line-height: 35px;
-    border-bottom: 1px solid #ededed;
-    &--wrap {
-      width: 280px;
-      margin: 0 auto;
-      border-bottom: 1px solid #ededed;
-      padding-bottom: 23px;
-      input[type="email"] {
-        padding: 10px 10px 10px 15px;
-        margin-bottom: 10px;
-      }
-      input[type="tel"] {
-        padding: 10px 10px 10px 15px;
-        margin-bottom: 10px;
-      }
-    }
-  }
   &__comments {
     border-bottom: 1px solid #ededed;
     padding-bottom: 23px;
@@ -197,15 +176,6 @@ input[type="checkbox"] {
     margin: 20px auto 0 auto;
     font-size: 20px;
 
-    &__owner {
-      border-bottom: none;
-      width: 709px;
-      &--wrap {
-        width: 709px;
-        margin: 0 auto;
-        border-bottom: none;
-      }
-    }
     &__comments {
       border-bottom: none;
       &--wrap {
@@ -336,15 +306,7 @@ input[type="checkbox"] {
 @media (min-width: $desktop-width) {
   .profile {
     width: 1220px;
-    &__owner {
-      width: 1220px;
-      border-bottom: none;
-      &--wrap {
-        input[type="text"] {
-          margin-bottom: 50px;
-        }
-      }
-    }
+
     &__comments {
       border-bottom: none;
       &--wrap {
