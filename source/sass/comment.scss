@@ -1,0 +1,109 @@
+.comment {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 23px;
+  textarea {
+    resize: vertical;
+    resize: horizontal;
+    min-height: 148px;
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin: 0 auto;
+    textarea {
+      text-transform: uppercase;
+      font-family: "Oswald", "Arial", sans-serif;
+    }
+  }
+  &__header {
+    text-transform: none;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 144px;
+      height: 3px;
+      background-color: #68b738;
+      right: -18px;
+      top: 20px;
+    }
+  }
+  &__holder {
+    ::placeholder {
+      padding-left: 10px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .comment {
+    border-bottom: none;
+    &__wrap {
+      width: 709px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      textarea {
+        text-transform: uppercase;
+        font-family: "Oswald", "Arial", sans-serif;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+    }
+    &__header {
+      margin-left: 40px;
+      margin-right: 40px;
+      font-size: 36px;
+      font-weight: 500;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 527px;
+        height: 3px;
+        background-color: #68b738;
+        right: -99px;
+        top: 28px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 3px;
+        background-color: #68b738;
+        left: -80px;
+        top: 24px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment {
+    border-bottom: none;
+    &__wrap {
+      width: 1220px;
+      textarea {
+        text-transform: uppercase;
+        font-family: "Oswald", "Arial", sans-serif;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+    &__header {
+      position: relative;
+      margin-left: 0;
+      margin-right: 0;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1030px;
+        height: 3px;
+        background-color: #68b738;
+        right: -69px;
+        top: 20px;
+      }
+    }
+  }
+}
