@@ -1,0 +1,29 @@
+.extra-info {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 17px;
+  &--wrap {
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .extra-info {
+    border-bottom: none;
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 41px;
+    border: 1px solid #e6e6e6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-info {
+    width: 50%;
+    border: none;
+    width: 570px;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+}

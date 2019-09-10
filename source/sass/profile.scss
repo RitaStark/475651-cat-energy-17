@@ -8,14 +8,6 @@ input[type="checkbox"] {
   margin: 0 auto;
   font-size: 16px;
   text-transform: uppercase;
-  &__reason {
-    border-bottom: 1px solid #ededed;
-    padding-bottom: 17px;
-    &--wrap {
-      width: 280px;
-      margin: 0 auto;
-    }
-  }
 
   &__owner {
     margin: 0 auto;
@@ -205,17 +197,6 @@ input[type="checkbox"] {
     margin: 20px auto 0 auto;
     font-size: 20px;
 
-    &__reason {
-      border-bottom: none;
-      &--wrap {
-        width: auto;
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 41px;
-        border: 1px solid #e6e6e6;
-      }
-    }
-
     &__owner {
       border-bottom: none;
       width: 709px;
@@ -355,17 +336,6 @@ input[type="checkbox"] {
 @media (min-width: $desktop-width) {
   .profile {
     width: 1220px;
-
-    &__reason {
-      // width: 50%;
-      border-bottom: none;
-      &--wrap {
-        width: 570px;
-        margin-right: 0;
-        margin-top: 70px;
-      }
-    }
-
     &__owner {
       width: 1220px;
       border-bottom: none;
@@ -416,10 +386,7 @@ input[type="checkbox"] {
       }
     }
   }
-  .main-reason-wrap {
-    display: flex;
-    justify-content: space-between;
-  }
+
   .food {
     &__header {
       font-size: 36px;
