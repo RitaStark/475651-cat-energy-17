@@ -1,6 +1,11 @@
 .catalog-main {
   margin: 0 auto;
   // width: 320px;
+  &__show {
+    border-bottom: 1px solid #ededed;
+    margin-top: 24px;
+    padding-bottom: 24px;
+  }
 
   &__header {
     font-size: 36px;
@@ -22,6 +27,21 @@
     padding-top: 21px;
     margin: -22px auto 22px auto;
     border-bottom: 1px solid #ededed;
+  }
+  &__order {
+    padding: 9px 0 9px 0;
+    background-color: #68b738;
+    color: #ffffff;
+    margin: -8px 20px 16px 20px;
+    flex-grow: 1;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: #99c684;
+    }
   }
 }
 
@@ -60,28 +80,6 @@
     margin-bottom: 23px;
     margin-top: -5px;
     border-collapse: collapse;
-  }
-
-  &__order {
-    padding: 9px 0 9px 0;
-    background-color: #68b738;
-    color: #ffffff;
-    margin: -8px 20px 16px 20px;
-    flex-grow: 1;
-
-    &:hover {
-      background-color: #5eaa2f;
-    }
-
-    &:active {
-      color: #99c684;
-    }
-  }
-
-  &__show {
-    border-bottom: 1px solid #ededed;
-    margin-top: 24px;
-    padding-bottom: 24px;
   }
 }
 
@@ -153,6 +151,21 @@
       width: 709px;
       margin: 0 auto;
     }
+    &__order {
+      flex-grow: 0;
+      margin-right: 37px;
+      margin-left: 37px;
+      margin-top: 13px;
+    }
+    &__show {
+      width: 322px;
+      border-top: none;
+      border-bottom: none;
+      padding-bottom: 40px;
+      border: 1px solid #cdcdcd;
+      margin-bottom: 50px;
+      margin-top: 85px;
+    }
   }
   .catalog-wrapper {
     width: 709px;
@@ -173,21 +186,6 @@
       text-align: center;
       font-size: 20px;
       padding-top: 18px;
-    }
-    &__show {
-      width: 322px;
-      border-top: none;
-      border-bottom: none;
-      padding-bottom: 40px;
-      border: 1px solid #cdcdcd;
-      margin-bottom: 50px;
-      margin-top: 85px;
-    }
-    &__order {
-      flex-grow: 0;
-      margin-right: 37px;
-      margin-left: 37px;
-      margin-top: 13px;
     }
     &__list {
       font-size: 16px;
@@ -242,11 +240,6 @@
       padding-left: 0;
       font-size: 60px;
     }
-  }
-  .catalog-item {
-    width: 171px;
-    margin-right: 37px;
-    padding-right: 0;
     &__order {
       margin-right: 37px;
     }
@@ -255,6 +248,11 @@
       margin-right: 0;
       margin-top: 83px;
     }
+  }
+  .catalog-item {
+    width: 171px;
+    margin-right: 37px;
+    padding-right: 0;
   }
   .show-more {
     &__header {

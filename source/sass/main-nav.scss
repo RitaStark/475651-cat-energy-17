@@ -9,12 +9,12 @@
     top: -65px;
   }
 
-  &__toggle {
-    border: none;
-    background-color: #ffffff;
-    cursor: pointer;
-    padding: 0;
-  }
+  // &__toggle {
+  //   border: none;
+  //   background-color: #ffffff;
+  //   cursor: pointer;
+  //   padding: 0;
+  // }
 
   &__wrapper {
     text-transform: uppercase;
@@ -41,9 +41,6 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     width: 450px;
-    &__toggle {
-      display: none;
-    }
     &__close-button {
       display: none;
     }
